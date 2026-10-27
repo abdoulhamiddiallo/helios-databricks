@@ -1,0 +1,8 @@
+EVALUATE
+SUMMARIZECOLUMNS(
+    Calendrier[Annee],
+    "c", [Éruptions de classe C],
+    "m", [Éruptions de classe M],
+    "x", [Éruptions de classe X]
+)
+ORDER BY Calendrier[Annee]

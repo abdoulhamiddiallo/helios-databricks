@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "HELIOS_Meteo_Spatiale"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "f8387cb8-2668-46eb-a26d-5a4b6354d777"
+  }
+}

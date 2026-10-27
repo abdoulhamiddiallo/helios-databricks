@@ -1,0 +1,79 @@
+table comparaison_sondes
+	lineageTag: 616c7cca-c067-4008-a63e-2af702aa2e34
+
+	column heure
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 5ec0ba10-1103-4933-9776-f4854673dc21
+		summarizeBy: none
+		sourceColumn: heure
+
+		annotation SummarizationSetBy = Automatic
+
+	column sonde
+		dataType: string
+		lineageTag: 7199627c-b7e2-4852-b929-62cc0db322f0
+		summarizeBy: none
+		sourceColumn: sonde
+
+		annotation SummarizationSetBy = Automatic
+
+	column officielle
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: f5df007b-1a6e-440b-81d8-bff0a6691f50
+		summarizeBy: none
+		sourceColumn: officielle
+
+		annotation SummarizationSetBy = Automatic
+
+	column minutes
+		dataType: int64
+		formatString: 0
+		lineageTag: 0ba60e6e-3570-4da2-9216-4994ce39fe34
+		summarizeBy: sum
+		sourceColumn: minutes
+
+		annotation SummarizationSetBy = Automatic
+
+	column vitesse_kms
+		dataType: double
+		lineageTag: c11b408c-78d1-45d1-a660-cd1679ae3c46
+		summarizeBy: sum
+		sourceColumn: vitesse_kms
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column densite_cm3
+		dataType: double
+		lineageTag: 42b526db-d186-4d99-992c-ae65dc50b72c
+		summarizeBy: sum
+		sourceColumn: densite_cm3
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ecart_vitesse_kms
+		dataType: double
+		lineageTag: 1568ef80-e82d-4a98-9a36-d2aaaef44287
+		summarizeBy: sum
+		sourceColumn: ecart_vitesse_kms
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition comparaison_sondes = m
+		mode: import
+		source =
+				let
+				    Source = Databricks.Catalogs(DatabricksHote, DatabricksCheminHttp, [Catalog="helios", Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation="2.0", Protocol=null]),
+				    helios_Database = Source{[Name="helios",Kind="Database"]}[Data],
+				    gold_Schema = helios_Database{[Name="gold",Kind="Schema"]}[Data],
+				    comparaison_sondes_View = gold_Schema{[Name="comparaison_sondes",Kind="View"]}[Data]
+				in
+				    comparaison_sondes_View
+

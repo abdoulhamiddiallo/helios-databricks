@@ -1,0 +1,9 @@
+EVALUATE
+SUMMARIZECOLUMNS(
+    Calendrier[Annee],
+    Calendrier[NoMois],
+    "kpMax", CALCULATE(MAX(journal_geomagnetique[kp_max])),
+    "joursForts", [Jours de tempête forte (G4 ou G5)],
+    "joursG5", [Jours G5]
+)
+ORDER BY Calendrier[Annee], Calendrier[NoMois]

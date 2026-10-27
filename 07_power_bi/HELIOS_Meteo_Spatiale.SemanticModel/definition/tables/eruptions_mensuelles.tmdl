@@ -1,0 +1,60 @@
+table eruptions_mensuelles
+	lineageTag: 6668870d-ea97-403c-bf77-a9140c4d77ef
+
+	column mois
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: fa10b15f-f20b-4f7b-a9a7-24e18aefc226
+		summarizeBy: none
+		sourceColumn: mois
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column lettre_classe
+		dataType: string
+		lineageTag: 25ffccee-a1e2-4452-b42c-ccdbad9102c2
+		summarizeBy: none
+		sourceColumn: lettre_classe
+
+		annotation SummarizationSetBy = Automatic
+
+	column eruptions
+		dataType: int64
+		formatString: 0
+		lineageTag: ba433d4a-b6cd-41af-930e-898bb26ce0f4
+		summarizeBy: sum
+		sourceColumn: eruptions
+
+		annotation SummarizationSetBy = Automatic
+
+	column flux_max_wm2
+		dataType: double
+		lineageTag: 5ffc75ef-29e4-4d0b-9a5f-9ea9cba0cf3f
+		summarizeBy: sum
+		sourceColumn: flux_max_wm2
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column plus_forte
+		dataType: string
+		lineageTag: a64781a8-1b12-4586-b79d-95528d6b3243
+		summarizeBy: none
+		sourceColumn: plus_forte
+
+		annotation SummarizationSetBy = Automatic
+
+	partition eruptions_mensuelles = m
+		mode: import
+		source =
+				let
+				    Source = Databricks.Catalogs(DatabricksHote, DatabricksCheminHttp, [Catalog="helios", Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation="2.0", Protocol=null]),
+				    helios_Database = Source{[Name="helios",Kind="Database"]}[Data],
+				    gold_Schema = helios_Database{[Name="gold",Kind="Schema"]}[Data],
+				    eruptions_mensuelles_View = gold_Schema{[Name="eruptions_mensuelles",Kind="View"]}[Data]
+				in
+				    eruptions_mensuelles_View
+

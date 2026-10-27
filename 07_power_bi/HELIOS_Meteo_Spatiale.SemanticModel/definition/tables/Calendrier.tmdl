@@ -1,0 +1,53 @@
+/// Un jour par ligne depuis le 1er janvier 1932, début de l'historique GFZ. Table de dates du modèle.
+table Calendrier
+	lineageTag: 83b35f4a-7c6a-49f9-9445-d3f47bef0d6c
+	dataCategory: Time
+
+	column Date
+		isKey
+		formatString: dd/mm/yyyy
+		lineageTag: fc40584e-b245-4cd7-99a0-d3d2831fef8e
+		isNameInferred
+		sourceColumn: [Date]
+
+	column Annee
+		lineageTag: 0a32ff44-bd4c-454c-92ff-edc0cfd3c76b
+		isNameInferred
+		sourceColumn: [Annee]
+
+	column Decennie
+		lineageTag: 228e91aa-c414-4319-b915-cdc3166898b4
+		isNameInferred
+		sourceColumn: [Decennie]
+
+	column NoMois
+		lineageTag: 7f90ac92-95d6-43b6-9992-07542e4a9804
+		isNameInferred
+		sourceColumn: [NoMois]
+
+	column Mois
+		lineageTag: 2fa9ba98-9e13-4504-bd5a-ff51f90416bf
+		isNameInferred
+		sourceColumn: [Mois]
+		sortByColumn: NoMois
+
+	column AnneeMois
+		lineageTag: 70f65867-d6c6-4bbc-bc6d-d95460a3bdde
+		isNameInferred
+		sourceColumn: [AnneeMois]
+
+	column Trimestre
+		lineageTag: 31027f3b-9bf6-4acb-bb22-447f23929c60
+		isNameInferred
+		sourceColumn: [Trimestre]
+
+	/// 1er janvier de l'annee, pour un axe chronologique continu sans defilement
+	column DebutAnnee = DATE(Calendrier[Annee], 1, 1)
+		dataType: dateTime
+		formatString: yyyy
+		lineageTag: c62f8bf0-ce59-49b6-a600-db8dfee45ca7
+
+	partition Calendrier = calculated
+		mode: import
+		source = VAR _debut = DATE(1932, 1, 1) VAR _fin = DATE(YEAR(TODAY()), 12, 31) RETURN ADDCOLUMNS(CALENDAR(_debut, _fin), "Annee", YEAR([Date]), "Decennie", INT(YEAR([Date]) / 10) * 10, "NoMois", MONTH([Date]), "Mois", FORMAT([Date], "mmm", "fr-FR"), "AnneeMois", FORMAT([Date], "yyyy-mm"), "Trimestre", "T" & QUARTER([Date]))
+

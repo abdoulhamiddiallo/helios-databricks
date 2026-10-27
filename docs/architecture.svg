@@ -1,0 +1,211 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="970" viewBox="0 0 1600 970">
+<defs>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7FA7D9"/></marker>
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0 L0 0 0 32" fill="none" stroke="#FFFFFF" stroke-opacity="0.035"/></pattern>
+<radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0) scale(700)"><stop offset="0" stop-color="#FF8A3D" stop-opacity="0.18"/><stop offset="1" stop-color="#FF8A3D" stop-opacity="0"/></radialGradient>
+<radialGradient id="sun" cx="40%" cy="38%" r="70%"><stop offset="0%" stop-color="#FFE7A3"/><stop offset="45%" stop-color="#FFB04D"/><stop offset="100%" stop-color="#F2603A"/></radialGradient>
+<linearGradient id="wind" x1="0" x2="1"><stop offset="0%" stop-color="#FF8A3D"/><stop offset="100%" stop-color="#2DD4BF"/></linearGradient>
+<linearGradient id="medal" x1="0" x2="1"><stop offset="0" stop-color="#D08B5B" stop-opacity="0.10"/><stop offset="0.5" stop-color="#B8C4D6" stop-opacity="0.06"/><stop offset="1" stop-color="#FFC24D" stop-opacity="0.10"/></linearGradient>
+</defs>
+<rect width="1600" height="970" fill="#070B14"/><rect width="1600" height="970" fill="url(#grid)"/><rect width="1600" height="970" fill="url(#glow)"/>
+<g transform="translate(40,34) scale(1.05)">
+<line x1="22" y1="4" x2="22" y2="9" stroke="#FF8A3D" stroke-width="2.2" stroke-linecap="round" transform="rotate(0 22 22)" opacity="1"/>
+<line x1="22" y1="4" x2="22" y2="9" stroke="#FF8A3D" stroke-width="2.2" stroke-linecap="round" transform="rotate(30 22 22)" opacity="0.55"/>
+<line x1="22" y1="4" x2="22" y2="9" stroke="#FF8A3D" stroke-width="2.2" stroke-linecap="round" transform="rotate(60 22 22)" opacity="1"/>
+<line x1="22" y1="4" x2="22" y2="9" stroke="#FF8A3D" stroke-width="2.2" stroke-linecap="round" transform="rotate(90 22 22)" opacity="0.55"/>
+<line x1="22" y1="4" x2="22" y2="9" stroke="#FF8A3D" stroke-width="2.2" stroke-linecap="round" transform="rotate(120 22 22)" opacity="1"/>
+<line x1="22" y1="4" x2="22" y2="9" stroke="#FF8A3D" stroke-width="2.2" stroke-linecap="round" transform="rotate(150 22 22)" opacity="0.55"/>
+<line x1="22" y1="4" x2="22" y2="9" stroke="#FF8A3D" stroke-width="2.2" stroke-linecap="round" transform="rotate(180 22 22)" opacity="1"/>
+<line x1="22" y1="4" x2="22" y2="9" stroke="#FF8A3D" stroke-width="2.2" stroke-linecap="round" transform="rotate(210 22 22)" opacity="0.55"/>
+<line x1="22" y1="4" x2="22" y2="9" stroke="#FF8A3D" stroke-width="2.2" stroke-linecap="round" transform="rotate(240 22 22)" opacity="1"/>
+<line x1="22" y1="4" x2="22" y2="9" stroke="#FF8A3D" stroke-width="2.2" stroke-linecap="round" transform="rotate(270 22 22)" opacity="0.55"/>
+<line x1="22" y1="4" x2="22" y2="9" stroke="#FF8A3D" stroke-width="2.2" stroke-linecap="round" transform="rotate(300 22 22)" opacity="1"/>
+<line x1="22" y1="4" x2="22" y2="9" stroke="#FF8A3D" stroke-width="2.2" stroke-linecap="round" transform="rotate(330 22 22)" opacity="0.55"/>
+<circle cx="22" cy="22" r="11" fill="url(#sun)"/><path d="M33 26 C 40 30, 46 34, 52 40" stroke="url(#wind)" stroke-width="2.4" fill="none" stroke-linecap="round"/><path d="M31 31 C 37 37, 41 41, 46 48" stroke="url(#wind)" stroke-width="1.6" fill="none" stroke-linecap="round" opacity="0.7"/><ellipse cx="52" cy="48" rx="10" ry="6.5" fill="none" stroke="#2DD4BF" stroke-width="1.4" opacity="0.8" transform="rotate(-20 52 48)"/><circle cx="52" cy="48" r="4.2" fill="#3B82F6" stroke="#9AD0FF" stroke-width="1"/></g>
+<text x="118" y="58" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="13" font-weight="600" fill="#7FA7D9" text-anchor="start" letter-spacing="2.2" opacity="1">HÉLIOS · ARCHITECTURE LAKEHOUSE DE LA MÉTÉO SPATIALE</text>
+<text x="118" y="92" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="30" font-weight="700" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">Du Soleil à Power BI et Fabric Apps, sur Azure Databricks</text>
+<text x="118" y="118" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="15" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">3 sources publiques · 1 collecteur · 19 tables Delta · 1 job quotidien · gouvernance Unity Catalog</text>
+<text x="1180" y="80" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="22" font-weight="700" fill="#FFC24D" text-anchor="start" letter-spacing="0" opacity="1">94 ans</text>
+<text x="1180" y="100" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="11.5" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">de Kp, depuis 1932</text>
+<text x="1310" y="80" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="22" font-weight="700" fill="#2DD4BF" text-anchor="start" letter-spacing="0" opacity="1">3 sondes</text>
+<text x="1310" y="100" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="11.5" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">du vent solaire à L1</text>
+<text x="1440" y="80" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="22" font-weight="700" fill="#FF8A3D" text-anchor="start" letter-spacing="0" opacity="1">16 ans</text>
+<text x="1440" y="100" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="11.5" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">de CME NASA</text>
+<text x="40" y="162" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="12" font-weight="600" fill="#7FA7D9" text-anchor="start" letter-spacing="1.8" opacity="1">01 · SOURCES</text>
+<text x="350" y="162" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="12" font-weight="600" fill="#7FA7D9" text-anchor="start" letter-spacing="1.8" opacity="1">02 · ATTERRISSAGE</text>
+<text x="640" y="162" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="12" font-weight="600" fill="#7FA7D9" text-anchor="start" letter-spacing="1.8" opacity="1">03 · PIPELINE LAKEFLOW · SERVERLESS</text>
+<text x="1310" y="162" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="12" font-weight="600" fill="#7FA7D9" text-anchor="start" letter-spacing="1.8" opacity="1">04 · RESTITUTION</text>
+<rect x="40" y="180" width="260" height="145" rx="14" fill="#0D1422" stroke="#1E2A3D" stroke-width="1.2"/>
+<rect x="40" y="194" width="3" height="117" rx="1.5" fill="#FF8A3D"/>
+<text x="60" y="214" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="15" font-weight="700" fill="#EEF3FB" text-anchor="start" letter-spacing="0.6" opacity="1">NOAA SWPC</text>
+<text x="60" y="240" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="13" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">Vent solaire, champ magnétique,</text>
+<text x="60" y="259" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="13" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">Kp, rayons X, cycle solaire</text>
+<rect x="60" y="282" width="139" height="22" rx="11" fill="#FF8A3D" fill-opacity="0.12" stroke="#FF8A3D" stroke-opacity="0.45"/>
+<text x="69" y="297" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="11.5" font-weight="500" fill="#FF8A3D" text-anchor="start" letter-spacing="0" opacity="1">JSON · temps réel</text>
+<path d="M300,252 C325.0,252 325.0,262 350,262" fill="none" stroke="#7FA7D9" stroke-width="1.6" stroke-opacity="0.85" marker-end="url(#ar)"/>
+<rect x="40" y="345" width="260" height="145" rx="14" fill="#0D1422" stroke="#1E2A3D" stroke-width="1.2"/>
+<rect x="40" y="359" width="3" height="117" rx="1.5" fill="#2DD4BF"/>
+<text x="60" y="379" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="15" font-weight="700" fill="#EEF3FB" text-anchor="start" letter-spacing="0.6" opacity="1">NASA CCMC DONKI</text>
+<text x="60" y="405" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="13" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">Éjections de masse coronale,</text>
+<text x="60" y="424" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="13" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">tempêtes et éruptions liées</text>
+<rect x="60" y="447" width="146" height="22" rx="11" fill="#2DD4BF" fill-opacity="0.12" stroke="#2DD4BF" stroke-opacity="0.45"/>
+<text x="69" y="462" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="11.5" font-weight="500" fill="#2DD4BF" text-anchor="start" letter-spacing="0" opacity="1">JSON · depuis 2010</text>
+<path d="M300,417 C325.0,417 325.0,262 350,262" fill="none" stroke="#7FA7D9" stroke-width="1.6" stroke-opacity="0.85" marker-end="url(#ar)"/>
+<rect x="40" y="510" width="260" height="145" rx="14" fill="#0D1422" stroke="#1E2A3D" stroke-width="1.2"/>
+<rect x="40" y="524" width="3" height="117" rx="1.5" fill="#FFC24D"/>
+<text x="60" y="544" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="15" font-weight="700" fill="#EEF3FB" text-anchor="start" letter-spacing="0.6" opacity="1">GFZ POTSDAM</text>
+<text x="60" y="570" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="13" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">Indice Kp toutes les 3 heures,</text>
+<text x="60" y="589" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="13" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">Ap, taches solaires, F10.7</text>
+<rect x="60" y="612" width="153" height="22" rx="11" fill="#FFC24D" fill-opacity="0.12" stroke="#FFC24D" stroke-opacity="0.45"/>
+<text x="69" y="627" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="11.5" font-weight="500" fill="#FFC24D" text-anchor="start" letter-spacing="0" opacity="1">Texte · depuis 1932</text>
+<path d="M300,582 C325.0,582 325.0,262 350,262" fill="none" stroke="#7FA7D9" stroke-width="1.6" stroke-opacity="0.85" marker-end="url(#ar)"/>
+<rect x="350" y="180" width="250" height="190" rx="14" fill="#0D1422" stroke="#7FA7D9" stroke-width="1.2"/>
+<text x="370" y="212" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="16" font-weight="700" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">01_collecteur</text>
+<text x="370" y="234" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">notebook Python · serverless</text>
+<circle cx="374" cy="262" r="2.6" fill="#FF8A3D"/>
+<text x="386" y="266" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="12.5" font-weight="400" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">4 essais, attente exponentielle</text>
+<circle cx="374" cy="286" r="2.6" fill="#FF8A3D"/>
+<text x="386" y="290" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="12.5" font-weight="400" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">enveloppe + empreinte SHA-256</text>
+<circle cx="374" cy="310" r="2.6" fill="#FF8A3D"/>
+<text x="386" y="314" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="12.5" font-weight="400" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">NASA : fenêtres de 60 jours</text>
+<circle cx="374" cy="334" r="2.6" fill="#FF8A3D"/>
+<text x="386" y="338" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="12.5" font-weight="400" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">GFZ : 1er passage, puis le lundi</text>
+<path d="M475,370 L475,420" fill="none" stroke="#7FA7D9" stroke-width="1.6" stroke-opacity="0.85" marker-end="url(#ar)"/>
+<text x="487" y="400" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="11.5" font-weight="400" fill="#5C6B86" text-anchor="start" letter-spacing="0" opacity="1">dépôt brut, jamais modifié</text>
+<rect x="350" y="420" width="250" height="245" rx="14" fill="#0B1A22" stroke="#2DD4BF" stroke-width="1.2"/>
+<text x="370" y="452" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="15" font-weight="700" fill="#2DD4BF" text-anchor="start" letter-spacing="0" opacity="1">helios.landing.brut</text>
+<text x="370" y="473" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">volume Unity Catalog</text>
+<text x="372" y="505" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="12" font-weight="500" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">swpc/</text>
+<text x="388" y="525" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="12" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">vent_solaire/*.json</text>
+<text x="388" y="545" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="12" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">champ_magnetique/ …</text>
+<text x="372" y="565" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="12" font-weight="500" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">donki/</text>
+<text x="388" y="585" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="12" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">donki_CME/*_20240508_….json</text>
+<text x="372" y="605" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="12" font-weight="500" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">gfz/</text>
+<text x="388" y="625" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="12" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">kp_depuis_1932/*.txt</text>
+<text x="370" y="650" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="11.5" font-weight="400" fill="#5C6B86" text-anchor="start" letter-spacing="0" opacity="1">un fichier horodaté par collecte</text>
+<rect x="640" y="180" width="630" height="485" rx="18" fill="url(#medal)" stroke="#FF8A3D" stroke-width="1.3" stroke-dasharray="6 5"/>
+<text x="660" y="206" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="14" font-weight="700" fill="#FF8A3D" text-anchor="start" letter-spacing="0" opacity="1">helios_pipeline</text>
+<text x="800" y="206" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">déclaratif · incrémental · UTC · mode standard</text>
+<rect x="656" y="222" width="190" height="428" rx="12" fill="#0D1422" stroke="#D08B5B" stroke-width="1.2"/>
+<rect x="656" y="222" width="190" height="46" rx="12" fill="#D08B5B" fill-opacity="0.12"/>
+<text x="670" y="243" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="13" font-weight="800" fill="#D08B5B" text-anchor="start" letter-spacing="2" opacity="1">BRONZE</text>
+<text x="670" y="260" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="11.5" font-weight="500" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">3 streaming tables</text>
+<text x="670" y="294" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="11.6" font-weight="400" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">swpc</text>
+<text x="670" y="318" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="11.6" font-weight="400" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">donki</text>
+<text x="670" y="342" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="11.6" font-weight="400" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">gfz_lignes</text>
+<rect x="668" y="588" width="90" height="22" rx="11" fill="#D08B5B" fill-opacity="0.12" stroke="#D08B5B" stroke-opacity="0.45"/>
+<text x="677" y="603" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="10.5" font-weight="500" fill="#D08B5B" text-anchor="start" letter-spacing="0" opacity="1">Auto Loader</text>
+<rect x="668" y="614" width="109" height="22" rx="11" fill="#D08B5B" fill-opacity="0.12" stroke="#D08B5B" stroke-opacity="0.45"/>
+<text x="677" y="629" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="10.5" font-weight="500" fill="#D08B5B" text-anchor="start" letter-spacing="0" opacity="1">expect_or_fail</text>
+<path d="M846,436.0 L861,436.0" fill="none" stroke="#D08B5B" stroke-width="1.6" stroke-opacity="0.85" marker-end="url(#ar)"/>
+<rect x="861" y="222" width="190" height="428" rx="12" fill="#0D1422" stroke="#B8C4D6" stroke-width="1.2"/>
+<rect x="861" y="222" width="190" height="46" rx="12" fill="#B8C4D6" fill-opacity="0.12"/>
+<text x="875" y="243" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="13" font-weight="800" fill="#B8C4D6" text-anchor="start" letter-spacing="2" opacity="1">SILVER</text>
+<text x="875" y="260" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="11.5" font-weight="500" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">9 tables nettoyées</text>
+<text x="875" y="294" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="11.6" font-weight="400" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">vent_solaire</text>
+<text x="875" y="318" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="11.6" font-weight="400" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">champ_magnetique</text>
+<text x="875" y="342" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="11.6" font-weight="400" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">kp_noaa</text>
+<text x="875" y="366" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="11.6" font-weight="400" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">rayons_x</text>
+<text x="875" y="390" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="11.6" font-weight="400" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">cycle_solaire_mensuel</text>
+<text x="875" y="414" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="11.6" font-weight="400" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">kp_historique_3h</text>
+<text x="875" y="438" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="11.6" font-weight="400" fill="#A78BFA" text-anchor="start" letter-spacing="0" opacity="1">donki_cme  · SCD 2</text>
+<text x="875" y="462" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="11.6" font-weight="400" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">donki_gst</text>
+<text x="875" y="486" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="11.6" font-weight="400" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">donki_flr</text>
+<rect x="873" y="564" width="142" height="22" rx="11" fill="#B8C4D6" fill-opacity="0.12" stroke="#B8C4D6" stroke-opacity="0.45"/>
+<text x="882" y="579" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="10.5" font-weight="500" fill="#B8C4D6" text-anchor="start" letter-spacing="0" opacity="1">from_json · explode</text>
+<rect x="873" y="590" width="116" height="22" rx="11" fill="#B8C4D6" fill-opacity="0.12" stroke="#B8C4D6" stroke-opacity="0.45"/>
+<text x="882" y="605" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="10.5" font-weight="500" fill="#B8C4D6" text-anchor="start" letter-spacing="0" opacity="1">AUTO CDC 1 et 2</text>
+<rect x="873" y="616" width="96" height="22" rx="11" fill="#B8C4D6" fill-opacity="0.12" stroke="#B8C4D6" stroke-opacity="0.45"/>
+<text x="882" y="631" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="10.5" font-weight="500" fill="#B8C4D6" text-anchor="start" letter-spacing="0" opacity="1">expectations</text>
+<path d="M1051,436.0 L1066,436.0" fill="none" stroke="#B8C4D6" stroke-width="1.6" stroke-opacity="0.85" marker-end="url(#ar)"/>
+<rect x="1066" y="222" width="190" height="428" rx="12" fill="#0D1422" stroke="#FFC24D" stroke-width="1.2"/>
+<rect x="1066" y="222" width="190" height="46" rx="12" fill="#FFC24D" fill-opacity="0.12"/>
+<text x="1080" y="243" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="13" font-weight="800" fill="#FFC24D" text-anchor="start" letter-spacing="2" opacity="1">GOLD</text>
+<text x="1080" y="260" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="11.5" font-weight="500" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">7 vues matérialisées</text>
+<text x="1080" y="294" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="11.6" font-weight="400" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">vent_solaire_horaire</text>
+<text x="1080" y="318" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="11.6" font-weight="400" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">comparaison_sondes</text>
+<text x="1080" y="342" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="11.6" font-weight="400" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">kp_3h</text>
+<text x="1080" y="366" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="11.6" font-weight="400" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">dim_cycles_solaires</text>
+<text x="1080" y="390" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="11.6" font-weight="400" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">journal_geomagnetique</text>
+<text x="1080" y="414" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="11.6" font-weight="400" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">du_soleil_a_la_terre</text>
+<text x="1080" y="438" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="11.6" font-weight="400" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">eruptions_mensuelles</text>
+<rect x="1078" y="564" width="135" height="22" rx="11" fill="#FFC24D" fill-opacity="0.12" stroke="#FFC24D" stroke-opacity="0.45"/>
+<text x="1087" y="579" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="10.5" font-weight="500" fill="#FFC24D" text-anchor="start" letter-spacing="0" opacity="1">couplage de Newell</text>
+<rect x="1078" y="590" width="135" height="22" rx="11" fill="#FFC24D" fill-opacity="0.12" stroke="#FFC24D" stroke-opacity="0.45"/>
+<text x="1087" y="605" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="10.5" font-weight="500" fill="#FFC24D" text-anchor="start" letter-spacing="0" opacity="1">pression dynamique</text>
+<rect x="1078" y="616" width="135" height="22" rx="11" fill="#FFC24D" fill-opacity="0.12" stroke="#FFC24D" stroke-opacity="0.45"/>
+<text x="1087" y="631" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="10.5" font-weight="500" fill="#FFC24D" text-anchor="start" letter-spacing="0" opacity="1">transit balistique</text>
+<path d="M600,545 C628.0,545 628.0,445 656,445" fill="none" stroke="#2DD4BF" stroke-width="1.6" stroke-opacity="0.85" marker-end="url(#ar)"/>
+<rect x="1310" y="180" width="250" height="110" rx="14" fill="#0D1422" stroke="#7FA7D9" stroke-width="1.2"/>
+<rect x="1310" y="194" width="3" height="82" rx="1.5" fill="#7FA7D9"/>
+<text x="1330" y="212" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="15" font-weight="700" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">SQL Warehouse</text>
+<text x="1330" y="234" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">serverless · 2X-Small</text>
+<text x="1330" y="254" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">arrêt automatique après 5 min</text>
+<path d="M1270,300 C1290.0,300 1290.0,215 1310,215" fill="none" stroke="#FFC24D" stroke-width="1.6" stroke-opacity="0.85" marker-end="url(#ar)"/>
+<rect x="1310" y="312" width="250" height="80" rx="14" fill="#0D1422" stroke="#1E2A3D" stroke-width="1.2"/>
+<rect x="1310" y="326" width="3" height="52" rx="1.5" fill="#FF8A3D"/>
+<text x="1330" y="344" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="15" font-weight="700" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">Tableau de bord AI/BI</text>
+<text x="1330" y="366" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">4 visuels, natif Databricks</text>
+<rect x="1310" y="404" width="250" height="80" rx="14" fill="#0D1422" stroke="#1E2A3D" stroke-width="1.2"/>
+<rect x="1310" y="418" width="3" height="52" rx="1.5" fill="#2DD4BF"/>
+<text x="1330" y="436" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="15" font-weight="700" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">Genie Agent</text>
+<text x="1330" y="458" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">questions en français → SQL</text>
+<rect x="1310" y="496" width="250" height="80" rx="14" fill="#0D1422" stroke="#1E2A3D" stroke-width="1.2"/>
+<rect x="1310" y="510" width="3" height="52" rx="1.5" fill="#FFC24D"/>
+<text x="1330" y="528" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="15" font-weight="700" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">Power BI</text>
+<text x="1330" y="550" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">modèle sémantique · Import</text>
+<path d="M1310,272 L1292,272 L1292,536" fill="none" stroke="#7FA7D9" stroke-opacity="0.6" stroke-width="1.4"/>
+<path d="M1292,352 L1309,352" fill="none" stroke="#7FA7D9" stroke-opacity="0.8" stroke-width="1.4" marker-end="url(#ar)"/>
+<path d="M1292,444 L1309,444" fill="none" stroke="#7FA7D9" stroke-opacity="0.8" stroke-width="1.4" marker-end="url(#ar)"/>
+<path d="M1292,536 L1309,536" fill="none" stroke="#7FA7D9" stroke-opacity="0.8" stroke-width="1.4" marker-end="url(#ar)"/>
+<path d="M1435,576 L1435,592" fill="none" stroke="#FFC24D" stroke-width="1.6" stroke-opacity="0.85" marker-end="url(#ar)"/>
+<rect x="1310" y="592" width="250" height="73" rx="14" fill="#16112B" stroke="#7C5CFF" stroke-width="1.2"/>
+<rect x="1310" y="606" width="3" height="45" rx="1.5" fill="#A78BFA"/>
+<text x="1330" y="622" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="15" font-weight="700" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">Fabric Apps</text>
+<text x="1330" y="644" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="11.5" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">application React · lit le modèle en DAX</text>
+<rect x="40" y="700" width="1520" height="108" rx="14" fill="#120F24" stroke="#A78BFA" stroke-width="1.2"/>
+<text x="62" y="730" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="12" font-weight="700" fill="#A78BFA" text-anchor="start" letter-spacing="2" opacity="1">ORCHESTRATION</text>
+<text x="62" y="750" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="13.5" font-weight="600" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">job helios_orchestration</text>
+<text x="62" y="770" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">chaque jour à 06:17, Europe/Paris</text>
+<text x="62" y="788" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">1 nouvelle tentative · e-mail si échec</text>
+<rect x="420" y="722" width="270" height="64" rx="12" fill="#17132E" stroke="#A78BFA" stroke-width="1.2"/>
+<circle cx="450" cy="754" r="15" fill="#A78BFA" fill-opacity="0.2" stroke="#A78BFA"/>
+<text x="450" y="759" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="14" font-weight="800" fill="#A78BFA" text-anchor="middle" letter-spacing="0" opacity="1">1</text>
+<text x="476" y="750" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="15" font-weight="700" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">collecter</text>
+<text x="476" y="770" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">notebook 01_collecteur</text>
+<path d="M690,754 L750,754" fill="none" stroke="#A78BFA" stroke-width="1.6" stroke-opacity="0.85" marker-end="url(#ar)"/>
+<rect x="750" y="722" width="270" height="64" rx="12" fill="#17132E" stroke="#A78BFA" stroke-width="1.2"/>
+<circle cx="780" cy="754" r="15" fill="#A78BFA" fill-opacity="0.2" stroke="#A78BFA"/>
+<text x="780" y="759" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="14" font-weight="800" fill="#A78BFA" text-anchor="middle" letter-spacing="0" opacity="1">2</text>
+<text x="806" y="750" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="15" font-weight="700" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">transformer</text>
+<text x="806" y="770" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">pipeline helios_pipeline</text>
+<path d="M1020,754 L1080,754" fill="none" stroke="#A78BFA" stroke-width="1.6" stroke-opacity="0.85" marker-end="url(#ar)"/>
+<rect x="1080" y="722" width="270" height="64" rx="12" fill="#17132E" stroke="#A78BFA" stroke-width="1.2"/>
+<circle cx="1110" cy="754" r="15" fill="#A78BFA" fill-opacity="0.2" stroke="#A78BFA"/>
+<text x="1110" y="759" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="14" font-weight="800" fill="#A78BFA" text-anchor="middle" letter-spacing="0" opacity="1">3</text>
+<text x="1136" y="750" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="15" font-weight="700" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">controler</text>
+<text x="1136" y="770" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">notebook 02_controle</text>
+<text x="1420" y="750" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">fraîcheur,</text>
+<text x="1420" y="768" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">historique, liens</text>
+<text x="1420" y="786" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">CME → tempête</text>
+<rect x="40" y="826" width="1520" height="108" rx="14" fill="#0A1A1E" stroke="#2DD4BF" stroke-width="1.2"/>
+<text x="62" y="856" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="12" font-weight="700" fill="#2DD4BF" text-anchor="start" letter-spacing="2" opacity="1">GOUVERNANCE</text>
+<text x="62" y="876" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="13.5" font-weight="600" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">Unity Catalog</text>
+<text x="62" y="896" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="12" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">catalogue helios</text>
+<text x="62" y="914" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="12" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">landing · bronze · silver · gold</text>
+<rect x="420" y="848" width="212" height="64" rx="12" fill="#0E2328" stroke="#2DD4BF" stroke-width="1.2"/>
+<text x="436" y="874" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="700" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">Tags</text>
+<text x="436" y="894" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="11.8" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">source, licence, couche</text>
+<rect x="648" y="848" width="212" height="64" rx="12" fill="#0E2328" stroke="#2DD4BF" stroke-width="1.2"/>
+<text x="664" y="874" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="700" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">Droits</text>
+<text x="664" y="894" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="11.8" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">lecteurs : gold uniquement</text>
+<rect x="876" y="848" width="212" height="64" rx="12" fill="#0E2328" stroke="#2DD4BF" stroke-width="1.2"/>
+<text x="892" y="874" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="700" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">Lignée</text>
+<text x="892" y="894" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="11.8" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">du volume au gold, automatique</text>
+<rect x="1104" y="848" width="212" height="64" rx="12" fill="#0E2328" stroke="#2DD4BF" stroke-width="1.2"/>
+<text x="1120" y="874" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="700" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">Qualité</text>
+<text x="1120" y="894" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="11.8" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">event_log des expectations</text>
+<rect x="1332" y="848" width="212" height="64" rx="12" fill="#0E2328" stroke="#2DD4BF" stroke-width="1.2"/>
+<text x="1348" y="874" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="700" fill="#EEF3FB" text-anchor="start" letter-spacing="0" opacity="1">Coût</text>
+<text x="1348" y="894" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="11.8" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0" opacity="1">system.billing, par produit</text>
+</svg>

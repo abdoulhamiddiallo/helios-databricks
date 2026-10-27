@@ -1,0 +1,19 @@
+EVALUATE
+SELECTCOLUMNS(
+    du_soleil_a_la_terre,
+    "gst", du_soleil_a_la_terre[gst_id],
+    "cme", du_soleil_a_la_terre[cme_id],
+    "depart", du_soleil_a_la_terre[depart_soleil],
+    "arrivee", du_soleil_a_la_terre[debut_tempete],
+    "kpMax", du_soleil_a_la_terre[kp_max],
+    "vitesse", du_soleil_a_la_terre[vitesse_kms],
+    "demiAngle", du_soleil_a_la_terre[demi_angle_deg],
+    "type", du_soleil_a_la_terre[type_cme],
+    "position", du_soleil_a_la_terre[position_source],
+    "region", du_soleil_a_la_terre[region_active],
+    "transit", du_soleil_a_la_terre[transit_observe_h],
+    "balistique", du_soleil_a_la_terre[transit_balistique_h],
+    "ecart", du_soleil_a_la_terre[ecart_h],
+    "lien", du_soleil_a_la_terre[lien_nasa]
+)
+ORDER BY [depart] DESC

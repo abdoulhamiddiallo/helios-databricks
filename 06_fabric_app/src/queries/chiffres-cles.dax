@@ -1,0 +1,17 @@
+EVALUATE
+ROW(
+    "joursObserves", [Jours observés],
+    "joursTempete", [Jours de tempête],
+    "joursG4", [Jours G4],
+    "joursG5", [Jours G5],
+    "apRecord", [Ap record],
+    "journeeRecord", [Journée la plus agitée],
+    "cme", [CME géoeffectives],
+    "tempetesReliees", [Tempêtes reliées à une CME],
+    "transitMoyen", [Transit observé moyen (h)],
+    "transitMin", [Transit le plus court (h)],
+    "vitesseCme", [Vitesse moyenne des CME (km/s)],
+    "ecartBalistique", [Écart moyen au trajet balistique (h)],
+    "eruptions", [Éruptions],
+    "eruptionsX", [Éruptions de classe X]
+)

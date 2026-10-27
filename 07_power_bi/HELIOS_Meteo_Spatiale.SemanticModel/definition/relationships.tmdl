@@ -1,0 +1,20 @@
+relationship AutoDetected_de8404f5-a139-4316-a93f-5bad4b3a0484
+	fromColumn: journal_geomagnetique.cycle
+	toColumn: dim_cycles_solaires.cycle
+
+relationship journal_geomagnetique_jour_Calendrier_Date
+	fromColumn: journal_geomagnetique.jour
+	toColumn: Calendrier.Date
+
+relationship kp_3h_jour_Calendrier_Date
+	fromColumn: kp_3h.jour
+	toColumn: Calendrier.Date
+
+relationship du_soleil_a_la_terre_jour_tempete_Calendrier_Date
+	fromColumn: du_soleil_a_la_terre.jour_tempete
+	toColumn: Calendrier.Date
+
+relationship eruptions_mensuelles_mois_Calendrier_Date
+	fromColumn: eruptions_mensuelles.mois
+	toColumn: Calendrier.Date
+

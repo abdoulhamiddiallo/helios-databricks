@@ -1,0 +1,11 @@
+EVALUATE
+SELECTCOLUMNS(
+    vent_solaire_horaire,
+    "heure", vent_solaire_horaire[heure],
+    "vitesse", vent_solaire_horaire[vitesse_moy_kms],
+    "densite", vent_solaire_horaire[densite_moy_cm3],
+    "bz", vent_solaire_horaire[bz_min_nt],
+    "pression", vent_solaire_horaire[pression_max_npa],
+    "newell", vent_solaire_horaire[couplage_newell_moy]
+)
+ORDER BY [heure]

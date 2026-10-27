@@ -1,0 +1,10 @@
+# Modèle sémantique lu par l'application, sous l'alias « helios ».
+# Remplacez les deux identifiants par ceux de votre espace de travail et de votre modèle sémantique :
+# ils apparaissent dans l'adresse du modèle sur app.fabric.microsoft.com (/groups/<espace>/datasets/<modèle>).
+activeProfile: default
+profiles:
+  default:
+    semanticModels:
+      helios:
+        workspaceId: "00000000-0000-0000-0000-000000000000"
+        itemId: "00000000-0000-0000-0000-000000000000"

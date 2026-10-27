@@ -1,0 +1,19 @@
+{
+  "name": "HELIOS Spatial",
+  "dataColors": [
+    "#FF8A3D",
+    "#EF4444",
+    "#2DD4BF",
+    "#8B5CF6",
+    "#FACC15",
+    "#34D399",
+    "#60A5FA",
+    "#F472B6"
+  ],
+  "background": "#0E1527",
+  "foreground": "#EEF3FB",
+  "tableAccent": "#FF8A3D",
+  "good": "#34D399",
+  "neutral": "#FACC15",
+  "bad": "#EF4444"
+}

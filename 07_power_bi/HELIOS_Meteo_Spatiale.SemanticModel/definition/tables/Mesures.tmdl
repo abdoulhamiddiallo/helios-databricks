@@ -1,0 +1,181 @@
+/// Toutes les mesures du rapport HELIOS, rangées par dossier.
+table Mesures
+	lineageTag: 1f2e8dd1-0f78-4753-adff-152393678c07
+
+	/// Nombre de jours de mesure du Kp (GFZ depuis 1932, puis NOAA).
+	measure 'Jours observés' = COUNTROWS(journal_geomagnetique)
+		formatString: #,0
+		displayFolder: 1. Activité géomagnétique
+		lineageTag: 29d0f43b-7576-4a55-9f3b-cbc99b0f2786
+
+	/// Jours dont le Kp maximal atteint au moins la classe NOAA G1.
+	measure 'Jours de tempête' = CALCULATE(COUNTROWS(journal_geomagnetique), KEEPFILTERS(journal_geomagnetique[classe_noaa] <> "Calme"))
+		formatString: #,0
+		displayFolder: 1. Activité géomagnétique
+		lineageTag: 1e073fb5-091a-4314-ac18-41f5e7bf44d1
+
+	/// Jours de tempête sévère ou extrême.
+	measure 'Jours de tempête forte (G4 ou G5)' = CALCULATE(COUNTROWS(journal_geomagnetique), KEEPFILTERS(journal_geomagnetique[classe_noaa] IN {"G4", "G5"}))
+		formatString: #,0
+		displayFolder: 1. Activité géomagnétique
+		lineageTag: f869212f-d977-4296-bcbc-fb428014988d
+
+	/// Jours de tempête extrême (Kp 9).
+	measure 'Jours G5' = CALCULATE(COUNTROWS(journal_geomagnetique), KEEPFILTERS(journal_geomagnetique[classe_noaa] = "G5"))
+		formatString: #,0
+		displayFolder: 1. Activité géomagnétique
+		lineageTag: 3bea6f78-804d-46b0-9277-285db1a41a9b
+
+	measure 'Part des jours de tempête' = DIVIDE([Jours de tempête], [Jours observés])
+		formatString: 0.0 %
+		displayFolder: 1. Activité géomagnétique
+		lineageTag: 6a531b74-e5a4-4c01-88b6-2443ff65329d
+
+	measure 'Kp maximal' = MAX(journal_geomagnetique[kp_max])
+		formatString: 0.00
+		displayFolder: 1. Activité géomagnétique
+		lineageTag: 862c222b-c3ce-4394-8606-911114b310aa
+
+	/// Indice Ap journalier moyen : amplitude de la perturbation sur la journée.
+	measure 'Ap moyen' = AVERAGE(journal_geomagnetique[ap])
+		formatString: 0.0
+		displayFolder: 1. Activité géomagnétique
+		lineageTag: 3a5f2617-cbc1-4c45-8be1-7a80fab25f06
+
+	measure 'Ap record' = MAX(journal_geomagnetique[ap])
+		formatString: 0
+		displayFolder: 1. Activité géomagnétique
+		lineageTag: f4246252-fcdf-40db-abf7-702a749a5167
+
+	/// Journée au plus fort indice Ap, puis au plus fort Kp en cas d'égalité (même règle que le Genie Agent).
+	measure 'Journée la plus agitée' = VAR _top = TOPN(1, journal_geomagnetique, journal_geomagnetique[ap], DESC, journal_geomagnetique[kp_max], DESC) RETURN FORMAT(MAXX(_top, journal_geomagnetique[jour]), "d mmmm yyyy", "fr-FR")
+		displayFolder: 1. Activité géomagnétique
+		lineageTag: ec9e80a3-562e-426e-94f0-ff5b3f427a7e
+
+	measure 'Taches solaires moyennes' = AVERAGE(journal_geomagnetique[taches_solaires])
+		formatString: 0.0
+		displayFolder: 2. Soleil
+		lineageTag: 8b4c289e-5947-4f78-bba3-72dc3847c4b1
+
+	/// Moyenne mensuelle du nombre de taches solaires, série SILSO depuis 1749.
+	measure 'Taches solaires moyennes depuis 1749' = AVERAGE(cycle_solaire_mensuel[taches_solaires])
+		formatString: 0.0
+		displayFolder: 2. Soleil
+		lineageTag: 2c647947-0719-462e-9560-53568c987114
+
+	/// Flux radio solaire à 10,7 cm, mesuré depuis 1947.
+	measure 'Flux F10.7 moyen' = AVERAGE(journal_geomagnetique[flux_f107])
+		formatString: 0.0
+		displayFolder: 2. Soleil
+		lineageTag: 3eac5107-025d-4366-9cc5-597e57130773
+
+	measure Éruptions = SUM(eruptions_mensuelles[eruptions])
+		formatString: #,0
+		displayFolder: 2. Soleil
+		lineageTag: 0dd9b42c-1f5c-4b2e-b43a-b3eafd7eb492
+
+	measure 'Éruptions de classe X' = CALCULATE([Éruptions], KEEPFILTERS(eruptions_mensuelles[lettre_classe] = "X"))
+		formatString: #,0
+		displayFolder: 2. Soleil
+		lineageTag: 218cb49c-52f3-4830-9575-47e26a636634
+
+	measure 'Tempêtes reliées à une CME' = DISTINCTCOUNT(du_soleil_a_la_terre[gst_id])
+		formatString: #,0
+		displayFolder: 3. Du Soleil à la Terre
+		lineageTag: 0c14851a-e8d0-4076-8863-ca679dd91174
+
+	/// Éjections de masse coronale reliées par la NASA à une tempête sur Terre.
+	measure 'CME géoeffectives' = DISTINCTCOUNT(du_soleil_a_la_terre[cme_id])
+		formatString: #,0
+		displayFolder: 3. Du Soleil à la Terre
+		lineageTag: 1b35c2a3-604c-4cce-a342-2c5333a5171c
+
+	measure 'Transit observé moyen (h)' = AVERAGE(du_soleil_a_la_terre[transit_observe_h])
+		formatString: 0.0
+		displayFolder: 3. Du Soleil à la Terre
+		lineageTag: cd1ab3c2-e862-4f2c-bc1b-2d153eeff822
+
+	measure 'Transit le plus court (h)' = MIN(du_soleil_a_la_terre[transit_observe_h])
+		formatString: 0.0
+		displayFolder: 3. Du Soleil à la Terre
+		lineageTag: cde8a3a7-508a-4ada-a3f1-9671942033ae
+
+	measure 'Vitesse moyenne des CME (km/s)' = AVERAGE(du_soleil_a_la_terre[vitesse_kms])
+		formatString: #,0
+		displayFolder: 3. Du Soleil à la Terre
+		lineageTag: 313d5ffb-09ad-4f7b-b97e-27e509bec54b
+
+	/// Positif : la CME a mis plus de temps que prévu à vitesse constante, elle a ralenti en route.
+	measure 'Écart moyen au trajet balistique (h)' = AVERAGE(du_soleil_a_la_terre[ecart_h])
+		formatString: +0.0;-0.0;0.0
+		displayFolder: 3. Du Soleil à la Terre
+		lineageTag: fcd9a36f-4ecb-428f-b312-bb1e2fc5ea44
+
+	measure 'Vitesse moyenne du vent (km/s)' = AVERAGE(vent_solaire_horaire[vitesse_moy_kms])
+		formatString: #,0
+		displayFolder: 4. Vent solaire
+		lineageTag: 048043b1-527a-4e52-b920-2c004b3fe4f1
+
+	measure 'Vitesse maximale du vent (km/s)' = MAX(vent_solaire_horaire[vitesse_max_kms])
+		formatString: #,0
+		displayFolder: 4. Vent solaire
+		lineageTag: e21860e7-c6d0-44ca-81b4-4a9c485d9812
+
+	/// Composante nord-sud du champ magnétique interplanétaire. Sous -10 nT pendant plusieurs heures : risque de tempête.
+	measure 'Bz minimal (nT)' = MIN(vent_solaire_horaire[bz_min_nt])
+		formatString: 0.0
+		displayFolder: 4. Vent solaire
+		lineageTag: b9173201-1fda-40ca-9a45-3c57c5703eed
+
+	measure 'Pression dynamique maximale (nPa)' = MAX(vent_solaire_horaire[pression_max_npa])
+		formatString: 0.0
+		displayFolder: 4. Vent solaire
+		lineageTag: 07b4b500-7f59-4c2a-871c-b2d0e88b5702
+
+	/// Énergie transmise du vent solaire à la magnétosphère (Newell 2007).
+	measure 'Couplage de Newell moyen' = AVERAGE(vent_solaire_horaire[couplage_newell_moy])
+		formatString: #,0
+		displayFolder: 4. Vent solaire
+		lineageTag: c3fdba8e-ecee-4830-89f7-f8dc04693698
+
+	measure 'Dernière mesure du vent' = MAX(vent_solaire_horaire[heure])
+		formatString: dd/mm  hh:nn
+		displayFolder: 4. Vent solaire
+		lineageTag: 6b2b4edf-6fc1-4d42-907e-fa64018f658a
+
+	measure 'Kp le plus récent' = VAR _derniere = MAX(kp_3h[debut_tranche]) RETURN CALCULATE(MAX(kp_3h[kp]), kp_3h[debut_tranche] = _derniere)
+		formatString: 0.00
+		displayFolder: 5. Kp toutes les 3 heures
+		lineageTag: 4498854b-4ac4-4083-9b34-a7821b8473c8
+
+	measure 'Tranches de 3 h en tempête forte' = CALCULATE(COUNTROWS(kp_3h), KEEPFILTERS(kp_3h[classe_noaa] IN {"G4", "G5"}))
+		formatString: #,0
+		displayFolder: 5. Kp toutes les 3 heures
+		lineageTag: ad2c81a4-cebd-4368-ac5f-c76ed01ce050
+
+	/// Jours de tempête sévère (Kp de 7+ à 8+).
+	measure 'Jours G4' = CALCULATE(COUNTROWS(journal_geomagnetique), KEEPFILTERS(journal_geomagnetique[classe_noaa] = "G4"))
+		formatString: #,0
+		displayFolder: 1. Activité géomagnétique
+		lineageTag: dcfc64f0-383a-43a9-b945-ec702847164a
+
+	measure 'Éruptions de classe C' = CALCULATE([Éruptions], KEEPFILTERS(eruptions_mensuelles[lettre_classe] = "C"))
+		formatString: #,0
+		displayFolder: 2. Soleil
+		lineageTag: 9587e76b-9c2d-4e09-a69f-4dbe58c6bb60
+
+	measure 'Éruptions de classe M' = CALCULATE([Éruptions], KEEPFILTERS(eruptions_mensuelles[lettre_classe] = "M"))
+		formatString: #,0
+		displayFolder: 2. Soleil
+		lineageTag: 542e1a9a-4d13-4bd3-9da4-7c5f95d86b60
+
+	column Colonne
+		isHidden
+		lineageTag: efd3af02-19a5-4342-96e3-37c66dfef466
+		isNameInferred
+		sourceColumn: [Colonne]
+
+	partition Mesures = calculated
+		mode: import
+		source = ROW("Colonne", BLANK())
+

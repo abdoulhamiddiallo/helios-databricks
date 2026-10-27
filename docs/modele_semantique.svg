@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900"><defs><pattern id="g" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0 L0 0 0 32" fill="none" stroke="#fff" stroke-opacity=".035"/></pattern></defs><rect width="1600" height="900" fill="#070B14"/><rect width="1600" height="900" fill="url(#g)"/>
+<text x="40" y="52" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13" font-weight="600" fill="#7FA7D9" text-anchor="start" letter-spacing="2.2">HÉLIOS · MODÈLE SÉMANTIQUE POWER BI</text>
+<text x="40" y="86" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="28" font-weight="700" fill="#EEF3FB" text-anchor="start" letter-spacing="0">Un schéma en étoile autour du temps</text>
+<text x="40" y="112" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0">10 tables · 5 relations un-à-plusieurs · 31 mesures DAX en 5 dossiers · mode Import depuis helios.gold · paramètres DatabricksHote et DatabricksCheminHttp</text>
+<rect x="640" y="300" width="250" height="210" rx="12" fill="#0D1422" stroke="#2DD4BF" stroke-opacity=".8"/><rect x="640" y="300" width="250" height="40" rx="12" fill="#2DD4BF" fill-opacity=".14"/>
+<text x="654" y="318" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="9.5" font-weight="700" fill="#2DD4BF" text-anchor="start" letter-spacing="1.6">DIMENSION · DATES</text>
+<text x="654" y="333" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13.5" font-weight="700" fill="#EEF3FB" text-anchor="start" letter-spacing="0">Calendrier</text>
+<text x="656" y="358" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="600" fill="#FFC24D" text-anchor="start" letter-spacing="0">🔑 Date</text>
+<text x="656" y="378" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="400" fill="#B8C4D6" text-anchor="start" letter-spacing="0">Annee</text>
+<text x="656" y="398" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="400" fill="#B8C4D6" text-anchor="start" letter-spacing="0">Decennie</text>
+<text x="656" y="418" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="400" fill="#B8C4D6" text-anchor="start" letter-spacing="0">NoMois</text>
+<text x="656" y="438" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="400" fill="#B8C4D6" text-anchor="start" letter-spacing="0">Mois (tri : NoMois)</text>
+<text x="656" y="458" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="400" fill="#B8C4D6" text-anchor="start" letter-spacing="0">AnneeMois</text>
+<text x="656" y="478" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="400" fill="#B8C4D6" text-anchor="start" letter-spacing="0">Trimestre</text>
+<text x="656" y="498" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="400" fill="#B8C4D6" text-anchor="start" letter-spacing="0">DebutAnnee</text>
+<rect x="1300" y="170" width="250" height="110" rx="12" fill="#0D1422" stroke="#2DD4BF" stroke-opacity=".8"/><rect x="1300" y="170" width="250" height="40" rx="12" fill="#2DD4BF" fill-opacity=".14"/>
+<text x="1314" y="188" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="9.5" font-weight="700" fill="#2DD4BF" text-anchor="start" letter-spacing="1.6">DIMENSION</text>
+<text x="1314" y="203" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13.5" font-weight="700" fill="#EEF3FB" text-anchor="start" letter-spacing="0">dim_cycles_solaires</text>
+<text x="1316" y="228" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="600" fill="#FFC24D" text-anchor="start" letter-spacing="0">🔑 cycle</text>
+<text x="1316" y="248" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="400" fill="#B8C4D6" text-anchor="start" letter-spacing="0">debut</text>
+<text x="1316" y="268" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="400" fill="#B8C4D6" text-anchor="start" letter-spacing="0">fin</text>
+<rect x="1000" y="150" width="260" height="190" rx="12" fill="#0D1422" stroke="#FFC24D" stroke-opacity=".8"/><rect x="1000" y="150" width="260" height="40" rx="12" fill="#FFC24D" fill-opacity=".14"/>
+<text x="1014" y="168" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="9.5" font-weight="700" fill="#FFC24D" text-anchor="start" letter-spacing="1.6">FAIT · 1 LIGNE PAR JOUR</text>
+<text x="1014" y="183" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13.5" font-weight="700" fill="#EEF3FB" text-anchor="start" letter-spacing="0">journal_geomagnetique</text>
+<text x="1016" y="208" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="400" fill="#B8C4D6" text-anchor="start" letter-spacing="0">jour</text>
+<text x="1016" y="228" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="400" fill="#B8C4D6" text-anchor="start" letter-spacing="0">cycle</text>
+<text x="1016" y="248" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="400" fill="#B8C4D6" text-anchor="start" letter-spacing="0">kp_max</text>
+<text x="1016" y="268" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="400" fill="#B8C4D6" text-anchor="start" letter-spacing="0">classe_noaa</text>
+<text x="1016" y="288" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="400" fill="#B8C4D6" text-anchor="start" letter-spacing="0">ap</text>
+<text x="1016" y="308" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="400" fill="#B8C4D6" text-anchor="start" letter-spacing="0">taches_solaires</text>
+<text x="1016" y="328" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="400" fill="#B8C4D6" text-anchor="start" letter-spacing="0">flux_f107</text>
+<rect x="1000" y="520" width="260" height="150" rx="12" fill="#0D1422" stroke="#FFC24D" stroke-opacity=".8"/><rect x="1000" y="520" width="260" height="40" rx="12" fill="#FFC24D" fill-opacity=".14"/>
+<text x="1014" y="538" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="9.5" font-weight="700" fill="#FFC24D" text-anchor="start" letter-spacing="1.6">FAIT · TRANCHE DE 3 H</text>
+<text x="1014" y="553" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13.5" font-weight="700" fill="#EEF3FB" text-anchor="start" letter-spacing="0">kp_3h</text>
+<text x="1016" y="578" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="400" fill="#B8C4D6" text-anchor="start" letter-spacing="0">debut_tranche</text>
+<text x="1016" y="598" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="400" fill="#B8C4D6" text-anchor="start" letter-spacing="0">jour</text>
+<text x="1016" y="618" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="400" fill="#B8C4D6" text-anchor="start" letter-spacing="0">kp</text>
+<text x="1016" y="638" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="400" fill="#B8C4D6" text-anchor="start" letter-spacing="0">source</text>
+<text x="1016" y="658" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="400" fill="#B8C4D6" text-anchor="start" letter-spacing="0">classe_noaa</text>
+<rect x="300" y="150" width="280" height="190" rx="12" fill="#0D1422" stroke="#FFC24D" stroke-opacity=".8"/><rect x="300" y="150" width="280" height="40" rx="12" fill="#FFC24D" fill-opacity=".14"/>
+<text x="314" y="168" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="9.5" font-weight="700" fill="#FFC24D" text-anchor="start" letter-spacing="1.6">FAIT · TEMPÊTE ET CME</text>
+<text x="314" y="183" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13.5" font-weight="700" fill="#EEF3FB" text-anchor="start" letter-spacing="0">du_soleil_a_la_terre</text>
+<text x="316" y="208" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="400" fill="#B8C4D6" text-anchor="start" letter-spacing="0">gst_id · cme_id</text>
+<text x="316" y="228" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="400" fill="#B8C4D6" text-anchor="start" letter-spacing="0">depart_soleil</text>
+<text x="316" y="248" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="400" fill="#B8C4D6" text-anchor="start" letter-spacing="0">debut_tempete</text>
+<text x="316" y="268" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="400" fill="#B8C4D6" text-anchor="start" letter-spacing="0">vitesse_kms</text>
+<text x="316" y="288" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="400" fill="#B8C4D6" text-anchor="start" letter-spacing="0">transit_observe_h</text>
+<text x="316" y="308" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="400" fill="#B8C4D6" text-anchor="start" letter-spacing="0">ecart_h</text>
+<text x="316" y="328" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="400" fill="#B8C4D6" text-anchor="start" letter-spacing="0">jour_tempete (calculée)</text>
+<rect x="300" y="540" width="280" height="130" rx="12" fill="#0D1422" stroke="#FFC24D" stroke-opacity=".8"/><rect x="300" y="540" width="280" height="40" rx="12" fill="#FFC24D" fill-opacity=".14"/>
+<text x="314" y="558" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="9.5" font-weight="700" fill="#FFC24D" text-anchor="start" letter-spacing="1.6">FAIT · MOIS ET CLASSE</text>
+<text x="314" y="573" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13.5" font-weight="700" fill="#EEF3FB" text-anchor="start" letter-spacing="0">eruptions_mensuelles</text>
+<text x="316" y="598" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="400" fill="#B8C4D6" text-anchor="start" letter-spacing="0">mois</text>
+<text x="316" y="618" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="400" fill="#B8C4D6" text-anchor="start" letter-spacing="0">lettre_classe</text>
+<text x="316" y="638" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="400" fill="#B8C4D6" text-anchor="start" letter-spacing="0">eruptions</text>
+<text x="316" y="658" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="400" fill="#B8C4D6" text-anchor="start" letter-spacing="0">flux_max_wm2</text>
+<path d="M1000,208 C945.0,208 945.0,330 890,330" fill="none" stroke="#7FA7D9" stroke-width="1.7" stroke-opacity=".85"/>
+<text x="990" y="202" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="13" font-weight="700" fill="#FF8A3D" text-anchor="end" letter-spacing="0">∗</text>
+<text x="900" y="324" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="13" font-weight="700" fill="#2DD4BF" text-anchor="start" letter-spacing="0">1</text>
+<path d="M1000,588 C945.0,588 945.0,350 890,350" fill="none" stroke="#7FA7D9" stroke-width="1.7" stroke-opacity=".85"/>
+<text x="990" y="582" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="13" font-weight="700" fill="#FF8A3D" text-anchor="end" letter-spacing="0">∗</text>
+<text x="900" y="344" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="13" font-weight="700" fill="#2DD4BF" text-anchor="start" letter-spacing="0">1</text>
+<path d="M580,348 C610.0,348 610.0,330 640,330" fill="none" stroke="#7FA7D9" stroke-width="1.7" stroke-opacity=".85"/>
+<text x="590" y="342" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="13" font-weight="700" fill="#FF8A3D" text-anchor="start" letter-spacing="0">∗</text>
+<text x="630" y="324" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="13" font-weight="700" fill="#2DD4BF" text-anchor="end" letter-spacing="0">1</text>
+<path d="M580,598 C610.0,598 610.0,350 640,350" fill="none" stroke="#7FA7D9" stroke-width="1.7" stroke-opacity=".85"/>
+<text x="590" y="592" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="13" font-weight="700" fill="#FF8A3D" text-anchor="start" letter-spacing="0">∗</text>
+<text x="630" y="344" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="13" font-weight="700" fill="#2DD4BF" text-anchor="end" letter-spacing="0">1</text>
+<path d="M1260,208 C1280.0,208 1280.0,228 1300,228" fill="none" stroke="#7FA7D9" stroke-width="1.7" stroke-opacity=".85"/>
+<text x="1270" y="202" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="13" font-weight="700" fill="#FF8A3D" text-anchor="start" letter-spacing="0">∗</text>
+<text x="1290" y="222" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="13" font-weight="700" fill="#2DD4BF" text-anchor="end" letter-spacing="0">1</text>
+<text x="40" y="770" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="10.5" font-weight="700" fill="#5C6B86" text-anchor="start" letter-spacing="1.5">TABLES AUTONOMES (FILTRÉES PAR LEUR PROPRE AXE TEMPS)</text>
+<rect x="40" y="784" width="280" height="62" rx="10" fill="#0D1422" stroke="#B8C4D6" stroke-opacity=".5"/>
+<text x="54" y="808" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13" font-weight="700" fill="#EEF3FB" text-anchor="start" letter-spacing="0">vent_solaire_horaire</text>
+<text x="54" y="830" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="11.5" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0">10 colonnes · heure par heure</text>
+<rect x="340" y="784" width="280" height="62" rx="10" fill="#0D1422" stroke="#B8C4D6" stroke-opacity=".5"/>
+<text x="354" y="808" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13" font-weight="700" fill="#EEF3FB" text-anchor="start" letter-spacing="0">comparaison_sondes</text>
+<text x="354" y="830" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="11.5" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0">7 colonnes · heure et sonde</text>
+<rect x="640" y="784" width="280" height="62" rx="10" fill="#0D1422" stroke="#B8C4D6" stroke-opacity=".5"/>
+<text x="654" y="808" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13" font-weight="700" fill="#EEF3FB" text-anchor="start" letter-spacing="0">cycle_solaire_mensuel</text>
+<text x="654" y="830" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="11.5" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0">3 colonnes · mois depuis 1749</text>
+<rect x="990" y="700" width="570" height="162" rx="12" fill="#16112B" stroke="#A78BFA" stroke-opacity=".8"/>
+<text x="1006" y="724" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="10.5" font-weight="700" fill="#A78BFA" text-anchor="start" letter-spacing="1.5">TABLE MESURES · 31 MESURES DAX</text>
+<text x="1006" y="748" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="12" font-weight="500" fill="#EEF3FB" text-anchor="start" letter-spacing="0">1. Activité géomagnétique</text>
+<rect x="1220" y="738" width="280" height="11" rx="3" fill="#A78BFA" fill-opacity=".75"/>
+<text x="1506" y="748" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="700" fill="#A78BFA" text-anchor="start" letter-spacing="0">10</text>
+<text x="1006" y="767" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="12" font-weight="500" fill="#EEF3FB" text-anchor="start" letter-spacing="0">2. Soleil</text>
+<rect x="1220" y="757" width="196" height="11" rx="3" fill="#A78BFA" fill-opacity=".75"/>
+<text x="1422" y="767" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="700" fill="#A78BFA" text-anchor="start" letter-spacing="0">7</text>
+<text x="1006" y="786" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="12" font-weight="500" fill="#EEF3FB" text-anchor="start" letter-spacing="0">3. Du Soleil à la Terre</text>
+<rect x="1220" y="776" width="168" height="11" rx="3" fill="#A78BFA" fill-opacity=".75"/>
+<text x="1394" y="786" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="700" fill="#A78BFA" text-anchor="start" letter-spacing="0">6</text>
+<text x="1006" y="805" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="12" font-weight="500" fill="#EEF3FB" text-anchor="start" letter-spacing="0">4. Vent solaire</text>
+<rect x="1220" y="795" width="168" height="11" rx="3" fill="#A78BFA" fill-opacity=".75"/>
+<text x="1394" y="805" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="700" fill="#A78BFA" text-anchor="start" letter-spacing="0">6</text>
+<text x="1006" y="824" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="12" font-weight="500" fill="#EEF3FB" text-anchor="start" letter-spacing="0">5. Kp toutes les 3 heures</text>
+<rect x="1220" y="814" width="56" height="11" rx="3" fill="#A78BFA" fill-opacity=".75"/>
+<text x="1282" y="824" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11.5" font-weight="700" fill="#A78BFA" text-anchor="start" letter-spacing="0">2</text>
+<text x="1006" y="852" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="11" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0">KEEPFILTERS sur les classes · descriptions en français · formats d'affichage</text>
+</svg>

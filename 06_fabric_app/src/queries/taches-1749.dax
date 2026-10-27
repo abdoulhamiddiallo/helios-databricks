@@ -1,0 +1,8 @@
+EVALUATE
+SELECTCOLUMNS(
+    FILTER(cycle_solaire_mensuel, NOT ISBLANK(cycle_solaire_mensuel[taches_solaires])),
+    "mois", cycle_solaire_mensuel[mois],
+    "taches", cycle_solaire_mensuel[taches_solaires],
+    "f107", cycle_solaire_mensuel[flux_f107]
+)
+ORDER BY [mois]

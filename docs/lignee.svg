@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="820" viewBox="0 0 1600 820"><defs><pattern id="g" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0 L0 0 0 32" fill="none" stroke="#fff" stroke-opacity=".035"/></pattern></defs><rect width="1600" height="820" fill="#070B14"/><rect width="1600" height="820" fill="url(#g)"/>
+<text x="40" y="52" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13" font-weight="600" fill="#7FA7D9" text-anchor="start" letter-spacing="2.2">HÉLIOS · LIGNÉE DES DONNÉES</text>
+<text x="40" y="86" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="28" font-weight="700" fill="#EEF3FB" text-anchor="start" letter-spacing="0">De chaque fichier brut à chaque table gold</text>
+<text x="40" y="112" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0">Telle que Unity Catalog la reconstruit à partir du pipeline : chaque flèche est une dépendance réelle du code.</text>
+<text x="40" y="160" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="12" font-weight="700" fill="#2DD4BF" text-anchor="start" letter-spacing="2">VOLUME</text>
+<rect x="40" y="467" width="230" height="46" rx="10" fill="#0D1422" stroke="#2DD4BF" stroke-opacity=".7"/><rect x="40" y="477" width="3" height="26" rx="1.5" fill="#2DD4BF"/>
+<text x="56" y="487.0" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13.5" font-weight="600" fill="#EEF3FB" text-anchor="start" letter-spacing="0">landing.brut</text>
+<text x="56" y="504.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="11.5" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0">fichiers JSON et texte</text>
+<text x="330" y="160" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="12" font-weight="700" fill="#D08B5B" text-anchor="start" letter-spacing="2">BRONZE</text>
+<rect x="330" y="399" width="220" height="46" rx="10" fill="#0D1422" stroke="#D08B5B" stroke-opacity=".7"/><rect x="330" y="409" width="3" height="26" rx="1.5" fill="#D08B5B"/>
+<text x="346" y="427.0" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13.5" font-weight="600" fill="#EEF3FB" text-anchor="start" letter-spacing="0">swpc</text>
+<rect x="330" y="467" width="220" height="46" rx="10" fill="#0D1422" stroke="#D08B5B" stroke-opacity=".7"/><rect x="330" y="477" width="3" height="26" rx="1.5" fill="#D08B5B"/>
+<text x="346" y="495.0" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13.5" font-weight="600" fill="#EEF3FB" text-anchor="start" letter-spacing="0">donki</text>
+<rect x="330" y="535" width="220" height="46" rx="10" fill="#0D1422" stroke="#D08B5B" stroke-opacity=".7"/><rect x="330" y="545" width="3" height="26" rx="1.5" fill="#D08B5B"/>
+<text x="346" y="563.0" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13.5" font-weight="600" fill="#EEF3FB" text-anchor="start" letter-spacing="0">gfz_lignes</text>
+<text x="620" y="160" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="12" font-weight="700" fill="#B8C4D6" text-anchor="start" letter-spacing="2">SILVER</text>
+<rect x="620" y="195" width="260" height="46" rx="10" fill="#0D1422" stroke="#B8C4D6" stroke-opacity=".7"/><rect x="620" y="205" width="3" height="26" rx="1.5" fill="#B8C4D6"/>
+<text x="636" y="223.0" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13.5" font-weight="600" fill="#EEF3FB" text-anchor="start" letter-spacing="0">vent_solaire</text>
+<rect x="620" y="263" width="260" height="46" rx="10" fill="#0D1422" stroke="#B8C4D6" stroke-opacity=".7"/><rect x="620" y="273" width="3" height="26" rx="1.5" fill="#B8C4D6"/>
+<text x="636" y="291.0" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13.5" font-weight="600" fill="#EEF3FB" text-anchor="start" letter-spacing="0">champ_magnetique</text>
+<rect x="620" y="331" width="260" height="46" rx="10" fill="#0D1422" stroke="#B8C4D6" stroke-opacity=".7"/><rect x="620" y="341" width="3" height="26" rx="1.5" fill="#B8C4D6"/>
+<text x="636" y="359.0" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13.5" font-weight="600" fill="#EEF3FB" text-anchor="start" letter-spacing="0">kp_noaa</text>
+<rect x="620" y="399" width="260" height="46" rx="10" fill="#0D1422" stroke="#B8C4D6" stroke-opacity=".7"/><rect x="620" y="409" width="3" height="26" rx="1.5" fill="#B8C4D6"/>
+<text x="636" y="427.0" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13.5" font-weight="600" fill="#EEF3FB" text-anchor="start" letter-spacing="0">rayons_x</text>
+<rect x="620" y="467" width="260" height="46" rx="10" fill="#0D1422" stroke="#B8C4D6" stroke-opacity=".7"/><rect x="620" y="477" width="3" height="26" rx="1.5" fill="#B8C4D6"/>
+<text x="636" y="495.0" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13.5" font-weight="600" fill="#EEF3FB" text-anchor="start" letter-spacing="0">cycle_solaire_mensuel</text>
+<rect x="620" y="535" width="260" height="46" rx="10" fill="#0D1422" stroke="#B8C4D6" stroke-opacity=".7"/><rect x="620" y="545" width="3" height="26" rx="1.5" fill="#B8C4D6"/>
+<text x="636" y="563.0" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13.5" font-weight="600" fill="#EEF3FB" text-anchor="start" letter-spacing="0">kp_historique_3h</text>
+<rect x="620" y="603" width="260" height="46" rx="10" fill="#0D1422" stroke="#B8C4D6" stroke-opacity=".7"/><rect x="620" y="613" width="3" height="26" rx="1.5" fill="#B8C4D6"/>
+<text x="636" y="623.0" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13.5" font-weight="600" fill="#EEF3FB" text-anchor="start" letter-spacing="0">donki_cme</text>
+<text x="636" y="640.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="11.5" font-weight="400" fill="#A78BFA" text-anchor="start" letter-spacing="0">SCD 2</text>
+<rect x="620" y="671" width="260" height="46" rx="10" fill="#0D1422" stroke="#B8C4D6" stroke-opacity=".7"/><rect x="620" y="681" width="3" height="26" rx="1.5" fill="#B8C4D6"/>
+<text x="636" y="699.0" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13.5" font-weight="600" fill="#EEF3FB" text-anchor="start" letter-spacing="0">donki_gst</text>
+<rect x="620" y="739" width="260" height="46" rx="10" fill="#0D1422" stroke="#B8C4D6" stroke-opacity=".7"/><rect x="620" y="749" width="3" height="26" rx="1.5" fill="#B8C4D6"/>
+<text x="636" y="767.0" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13.5" font-weight="600" fill="#EEF3FB" text-anchor="start" letter-spacing="0">donki_flr</text>
+<text x="960" y="160" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="12" font-weight="700" fill="#FFC24D" text-anchor="start" letter-spacing="2">GOLD</text>
+<rect x="960" y="263" width="270" height="46" rx="10" fill="#0D1422" stroke="#FFC24D" stroke-opacity=".7"/><rect x="960" y="273" width="3" height="26" rx="1.5" fill="#FFC24D"/>
+<text x="976" y="291.0" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13.5" font-weight="600" fill="#EEF3FB" text-anchor="start" letter-spacing="0">vent_solaire_horaire</text>
+<rect x="960" y="331" width="270" height="46" rx="10" fill="#0D1422" stroke="#FFC24D" stroke-opacity=".7"/><rect x="960" y="341" width="3" height="26" rx="1.5" fill="#FFC24D"/>
+<text x="976" y="359.0" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13.5" font-weight="600" fill="#EEF3FB" text-anchor="start" letter-spacing="0">comparaison_sondes</text>
+<rect x="960" y="399" width="270" height="46" rx="10" fill="#0D1422" stroke="#FFC24D" stroke-opacity=".7"/><rect x="960" y="409" width="3" height="26" rx="1.5" fill="#FFC24D"/>
+<text x="976" y="427.0" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13.5" font-weight="600" fill="#EEF3FB" text-anchor="start" letter-spacing="0">kp_3h</text>
+<rect x="960" y="467" width="270" height="46" rx="10" fill="#0D1422" stroke="#FFC24D" stroke-opacity=".7"/><rect x="960" y="477" width="3" height="26" rx="1.5" fill="#FFC24D"/>
+<text x="976" y="495.0" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13.5" font-weight="600" fill="#EEF3FB" text-anchor="start" letter-spacing="0">dim_cycles_solaires</text>
+<rect x="960" y="535" width="270" height="46" rx="10" fill="#0D1422" stroke="#FFC24D" stroke-opacity=".7"/><rect x="960" y="545" width="3" height="26" rx="1.5" fill="#FFC24D"/>
+<text x="976" y="563.0" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13.5" font-weight="600" fill="#EEF3FB" text-anchor="start" letter-spacing="0">journal_geomagnetique</text>
+<rect x="960" y="603" width="270" height="46" rx="10" fill="#0D1422" stroke="#FFC24D" stroke-opacity=".7"/><rect x="960" y="613" width="3" height="26" rx="1.5" fill="#FFC24D"/>
+<text x="976" y="631.0" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13.5" font-weight="600" fill="#EEF3FB" text-anchor="start" letter-spacing="0">du_soleil_a_la_terre</text>
+<rect x="960" y="671" width="270" height="46" rx="10" fill="#0D1422" stroke="#FFC24D" stroke-opacity=".7"/><rect x="960" y="681" width="3" height="26" rx="1.5" fill="#FFC24D"/>
+<text x="976" y="699.0" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13.5" font-weight="600" fill="#EEF3FB" text-anchor="start" letter-spacing="0">eruptions_mensuelles</text>
+<text x="1310" y="160" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="12" font-weight="700" fill="#A78BFA" text-anchor="start" letter-spacing="2">RESTITUTION</text>
+<rect x="1310" y="433" width="250" height="46" rx="10" fill="#0D1422" stroke="#A78BFA" stroke-opacity=".7"/><rect x="1310" y="443" width="3" height="26" rx="1.5" fill="#A78BFA"/>
+<text x="1326" y="453.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="13.5" font-weight="600" fill="#EEF3FB" text-anchor="start" letter-spacing="0">Power BI</text>
+<text x="1326" y="470.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="11.5" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0">modèle sémantique</text>
+<rect x="1310" y="501" width="250" height="46" rx="10" fill="#0D1422" stroke="#A78BFA" stroke-opacity=".7"/><rect x="1310" y="511" width="3" height="26" rx="1.5" fill="#A78BFA"/>
+<text x="1326" y="521.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="13.5" font-weight="600" fill="#EEF3FB" text-anchor="start" letter-spacing="0">Fabric Apps</text>
+<text x="1326" y="538.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="11.5" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0">HÉLIOS Observatoire</text>
+<path d="M270,490 C300.0,490 300.0,422 326,422" fill="none" stroke="#2DD4BF" stroke-opacity=".55" stroke-width="1.6"/><circle cx="327" cy="422" r="2.6" fill="#2DD4BF"/>
+<path d="M270,490 C300.0,490 300.0,490 326,490" fill="none" stroke="#2DD4BF" stroke-opacity=".55" stroke-width="1.6"/><circle cx="327" cy="490" r="2.6" fill="#2DD4BF"/>
+<path d="M270,490 C300.0,490 300.0,558 326,558" fill="none" stroke="#2DD4BF" stroke-opacity=".55" stroke-width="1.6"/><circle cx="327" cy="558" r="2.6" fill="#2DD4BF"/>
+<path d="M550,422 C585.0,422 585.0,218 616,218" fill="none" stroke="#D08B5B" stroke-opacity=".55" stroke-width="1.6"/><circle cx="617" cy="218" r="2.6" fill="#D08B5B"/>
+<path d="M550,422 C585.0,422 585.0,286 616,286" fill="none" stroke="#D08B5B" stroke-opacity=".55" stroke-width="1.6"/><circle cx="617" cy="286" r="2.6" fill="#D08B5B"/>
+<path d="M550,422 C585.0,422 585.0,354 616,354" fill="none" stroke="#D08B5B" stroke-opacity=".55" stroke-width="1.6"/><circle cx="617" cy="354" r="2.6" fill="#D08B5B"/>
+<path d="M550,422 C585.0,422 585.0,422 616,422" fill="none" stroke="#D08B5B" stroke-opacity=".55" stroke-width="1.6"/><circle cx="617" cy="422" r="2.6" fill="#D08B5B"/>
+<path d="M550,422 C585.0,422 585.0,490 616,490" fill="none" stroke="#D08B5B" stroke-opacity=".55" stroke-width="1.6"/><circle cx="617" cy="490" r="2.6" fill="#D08B5B"/>
+<path d="M550,558 C585.0,558 585.0,558 616,558" fill="none" stroke="#D08B5B" stroke-opacity=".55" stroke-width="1.6"/><circle cx="617" cy="558" r="2.6" fill="#D08B5B"/>
+<path d="M550,490 C585.0,490 585.0,626 616,626" fill="none" stroke="#D08B5B" stroke-opacity=".55" stroke-width="1.6"/><circle cx="617" cy="626" r="2.6" fill="#D08B5B"/>
+<path d="M550,490 C585.0,490 585.0,694 616,694" fill="none" stroke="#D08B5B" stroke-opacity=".55" stroke-width="1.6"/><circle cx="617" cy="694" r="2.6" fill="#D08B5B"/>
+<path d="M550,490 C585.0,490 585.0,762 616,762" fill="none" stroke="#D08B5B" stroke-opacity=".55" stroke-width="1.6"/><circle cx="617" cy="762" r="2.6" fill="#D08B5B"/>
+<path d="M880,218 C920.0,218 920.0,286 956,286" fill="none" stroke="#B8C4D6" stroke-opacity=".55" stroke-width="1.6"/><circle cx="957" cy="286" r="2.6" fill="#B8C4D6"/>
+<path d="M880,286 C920.0,286 920.0,286 956,286" fill="none" stroke="#B8C4D6" stroke-opacity=".55" stroke-width="1.6"/><circle cx="957" cy="286" r="2.6" fill="#B8C4D6"/>
+<path d="M880,218 C920.0,218 920.0,354 956,354" fill="none" stroke="#B8C4D6" stroke-opacity=".55" stroke-width="1.6"/><circle cx="957" cy="354" r="2.6" fill="#B8C4D6"/>
+<path d="M880,558 C920.0,558 920.0,422 956,422" fill="none" stroke="#B8C4D6" stroke-opacity=".55" stroke-width="1.6"/><circle cx="957" cy="422" r="2.6" fill="#B8C4D6"/>
+<path d="M880,354 C920.0,354 920.0,422 956,422" fill="none" stroke="#B8C4D6" stroke-opacity=".55" stroke-width="1.6"/><circle cx="957" cy="422" r="2.6" fill="#B8C4D6"/>
+<path d="M880,558 C920.0,558 920.0,558 956,558" fill="none" stroke="#B8C4D6" stroke-opacity=".55" stroke-width="1.6"/><circle cx="957" cy="558" r="2.6" fill="#B8C4D6"/>
+<path d="M880,694 C920.0,694 920.0,626 956,626" fill="none" stroke="#B8C4D6" stroke-opacity=".55" stroke-width="1.6"/><circle cx="957" cy="626" r="2.6" fill="#B8C4D6"/>
+<path d="M880,626 C920.0,626 920.0,626 956,626" fill="none" stroke="#B8C4D6" stroke-opacity=".55" stroke-width="1.6"/><circle cx="957" cy="626" r="2.6" fill="#B8C4D6"/>
+<path d="M880,762 C920.0,762 920.0,694 956,694" fill="none" stroke="#B8C4D6" stroke-opacity=".55" stroke-width="1.6"/><circle cx="957" cy="694" r="2.6" fill="#B8C4D6"/>
+<path d="M1230,428 C1264,428 1264,552 1234,552" fill="none" stroke="#FFC24D" stroke-opacity=".8" stroke-width="1.5" stroke-dasharray="3 3"/><circle cx="1233" cy="552" r="2.6" fill="#FFC24D"/>
+<path d="M1230,496 C1264,496 1264,552 1234,552" fill="none" stroke="#FFC24D" stroke-opacity=".8" stroke-width="1.5" stroke-dasharray="3 3"/><circle cx="1233" cy="552" r="2.6" fill="#FFC24D"/>
+<path d="M1230,286 C1270.0,286 1270.0,456 1306,456" fill="none" stroke="#FFC24D" stroke-opacity=".55" stroke-width="1.6"/><circle cx="1307" cy="456" r="2.6" fill="#FFC24D"/>
+<path d="M1230,354 C1270.0,354 1270.0,456 1306,456" fill="none" stroke="#FFC24D" stroke-opacity=".55" stroke-width="1.6"/><circle cx="1307" cy="456" r="2.6" fill="#FFC24D"/>
+<path d="M1230,422 C1270.0,422 1270.0,456 1306,456" fill="none" stroke="#FFC24D" stroke-opacity=".55" stroke-width="1.6"/><circle cx="1307" cy="456" r="2.6" fill="#FFC24D"/>
+<path d="M1230,490 C1270.0,490 1270.0,456 1306,456" fill="none" stroke="#FFC24D" stroke-opacity=".55" stroke-width="1.6"/><circle cx="1307" cy="456" r="2.6" fill="#FFC24D"/>
+<path d="M1230,558 C1270.0,558 1270.0,456 1306,456" fill="none" stroke="#FFC24D" stroke-opacity=".55" stroke-width="1.6"/><circle cx="1307" cy="456" r="2.6" fill="#FFC24D"/>
+<path d="M1230,626 C1270.0,626 1270.0,456 1306,456" fill="none" stroke="#FFC24D" stroke-opacity=".55" stroke-width="1.6"/><circle cx="1307" cy="456" r="2.6" fill="#FFC24D"/>
+<path d="M1230,694 C1270.0,694 1270.0,456 1306,456" fill="none" stroke="#FFC24D" stroke-opacity=".55" stroke-width="1.6"/><circle cx="1307" cy="456" r="2.6" fill="#FFC24D"/>
+<path d="M1435.0,479.0 L1435.0,497.0" stroke="#A78BFA" stroke-width="1.8"/><circle cx="1435.0" cy="498.0" r="3" fill="#A78BFA"/>
+<text x="1445.0" y="494.0" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="11" font-weight="600" fill="#A78BFA" text-anchor="start" letter-spacing="0">DAX</text>
+<text x="40" y="796" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="12" font-weight="400" fill="#8FA0C0" text-anchor="start" letter-spacing="0">Lecture : bronze = copie fidèle des fichiers · silver = nettoyé, dédoublonné, historisé · gold = une question, une table · pointillés dorés : journal_geomagnetique s'appuie sur kp_3h et dim_cycles_solaires · cycle_solaire_mensuel (silver) est aussi chargé dans Power BI.</text>
+</svg>

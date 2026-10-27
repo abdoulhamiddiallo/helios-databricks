@@ -1,0 +1,10 @@
+EVALUATE
+SUMMARIZECOLUMNS(
+    Calendrier[Annee],
+    "tempete", [Jours de tempête],
+    "g4", [Jours G4],
+    "g5", [Jours G5],
+    "taches", [Taches solaires moyennes],
+    "apMoyen", [Ap moyen]
+)
+ORDER BY Calendrier[Annee]

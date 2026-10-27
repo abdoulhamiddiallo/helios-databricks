@@ -1,0 +1,112 @@
+table vent_solaire_horaire
+	lineageTag: e6101108-8ac8-4899-8bdf-9396f811044d
+
+	column heure
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: b3937fff-1a55-44d8-b93b-ba0ad25adeae
+		summarizeBy: none
+		sourceColumn: heure
+
+		annotation SummarizationSetBy = Automatic
+
+	column sondes
+		dataType: string
+		lineageTag: 3329339c-71af-47b2-825b-dcf8bf333e15
+		summarizeBy: none
+		sourceColumn: sondes
+
+		annotation SummarizationSetBy = Automatic
+
+	column minutes_mesurees
+		dataType: int64
+		formatString: 0
+		lineageTag: 6254f721-8c00-4c67-8bec-7ddaa7ebf767
+		summarizeBy: sum
+		sourceColumn: minutes_mesurees
+
+		annotation SummarizationSetBy = Automatic
+
+	column vitesse_moy_kms
+		dataType: double
+		lineageTag: 57eefd02-7c50-4601-bb69-8dcc21f3477a
+		summarizeBy: sum
+		sourceColumn: vitesse_moy_kms
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vitesse_max_kms
+		dataType: double
+		lineageTag: fb51b0bf-80c0-4d6f-b81a-e53d38986dfd
+		summarizeBy: sum
+		sourceColumn: vitesse_max_kms
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column densite_moy_cm3
+		dataType: double
+		lineageTag: 949ec9f6-a837-4eca-8a67-7195ac3c6c75
+		summarizeBy: sum
+		sourceColumn: densite_moy_cm3
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column bz_min_nt
+		dataType: double
+		lineageTag: 4923b991-edf8-408f-b86a-0a7439c046fa
+		summarizeBy: sum
+		sourceColumn: bz_min_nt
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column part_bz_sud_fort
+		dataType: double
+		lineageTag: 8388be97-34c3-44a8-af52-120860dbf601
+		summarizeBy: sum
+		sourceColumn: part_bz_sud_fort
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pression_max_npa
+		dataType: double
+		lineageTag: 95f74d19-eb27-409b-b5a3-7e69db329380
+		summarizeBy: sum
+		sourceColumn: pression_max_npa
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column couplage_newell_moy
+		dataType: double
+		lineageTag: 1feedc7c-9bc1-454a-bfae-2158dc222145
+		summarizeBy: sum
+		sourceColumn: couplage_newell_moy
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition vent_solaire_horaire = m
+		mode: import
+		source =
+				let
+				    Source = Databricks.Catalogs(DatabricksHote, DatabricksCheminHttp, [Catalog="helios", Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation="2.0", Protocol=null]),
+				    helios_Database = Source{[Name="helios",Kind="Database"]}[Data],
+				    gold_Schema = helios_Database{[Name="gold",Kind="Schema"]}[Data],
+				    vent_solaire_horaire_View = gold_Schema{[Name="vent_solaire_horaire",Kind="View"]}[Data]
+				in
+				    vent_solaire_horaire_View
+
+	annotation PBI_ResultType = Table
+

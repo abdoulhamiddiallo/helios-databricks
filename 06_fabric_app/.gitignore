@@ -1,0 +1,10 @@
+node_modules
+dist
+*.log
+.vite
+*.tsbuildinfo
+*.local
+.env*
+rayfin/.env*
+rayfin/.deployments.json
+rayfin/.temp/

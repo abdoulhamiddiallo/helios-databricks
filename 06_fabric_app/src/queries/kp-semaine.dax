@@ -1,0 +1,11 @@
+EVALUATE
+VAR _fin = MAX(kp_3h[debut_tranche])
+RETURN
+SELECTCOLUMNS(
+    FILTER(kp_3h, kp_3h[debut_tranche] > _fin - 8),
+    "debut", kp_3h[debut_tranche],
+    "kp", kp_3h[kp],
+    "classe", kp_3h[classe_noaa],
+    "source", kp_3h[source]
+)
+ORDER BY [debut]

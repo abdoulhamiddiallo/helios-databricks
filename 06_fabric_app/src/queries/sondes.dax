@@ -1,0 +1,10 @@
+EVALUATE
+SELECTCOLUMNS(
+    comparaison_sondes,
+    "heure", comparaison_sondes[heure],
+    "sonde", comparaison_sondes[sonde],
+    "officielle", comparaison_sondes[officielle],
+    "vitesse", comparaison_sondes[vitesse_kms],
+    "densite", comparaison_sondes[densite_cm3]
+)
+ORDER BY [heure], [sonde]

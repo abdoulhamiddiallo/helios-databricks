@@ -1,0 +1,47 @@
+table cycle_solaire_mensuel
+	lineageTag: 6e84acbe-c4cf-4691-b22e-a3173f41a38d
+
+	column mois
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 95316d02-dcf6-4ac2-8b14-1ef3ef2561c4
+		summarizeBy: none
+		sourceColumn: mois
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column taches_solaires
+		dataType: double
+		lineageTag: 250cf8d0-5742-4a26-9fae-a138daefad15
+		summarizeBy: sum
+		sourceColumn: taches_solaires
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column flux_f107
+		dataType: double
+		lineageTag: c5d80007-2250-43f7-9c07-37cc0f5f2139
+		summarizeBy: sum
+		sourceColumn: flux_f107
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition cycle_solaire_mensuel = m
+		mode: import
+		source =
+				let
+				    Source = Databricks.Catalogs(DatabricksHote, DatabricksCheminHttp, [Catalog="helios", Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation="2.0", Protocol=null]),
+				    helios_Database = Source{[Name="helios",Kind="Database"]}[Data],
+				    silver_Schema = helios_Database{[Name="silver",Kind="Schema"]}[Data],
+				    cycle_solaire_mensuel_View = silver_Schema{[Name="cycle_solaire_mensuel",Kind="View"]}[Data]
+				in
+				    cycle_solaire_mensuel_View
+
+	annotation PBI_ResultType = Table
+

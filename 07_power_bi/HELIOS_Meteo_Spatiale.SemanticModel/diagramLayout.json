@@ -1,0 +1,150 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 105.71428571428572
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 220,
+            "y": 860
+          },
+          "nodeIndex": "comparaison_sondes",
+          "nodeLineageTag": "616c7cca-c067-4008-a63e-2af702aa2e34",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 880,
+            "y": 860
+          },
+          "nodeIndex": "cycle_solaire_mensuel",
+          "nodeLineageTag": "6e84acbe-c4cf-4691-b22e-a3173f41a38d",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 220,
+            "y": 440
+          },
+          "nodeIndex": "dim_cycles_solaires",
+          "nodeLineageTag": "0ca8ee33-8175-4e7d-8d3a-1ee40f73d17d",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1220,
+            "y": 140
+          },
+          "nodeIndex": "du_soleil_a_la_terre",
+          "nodeLineageTag": "80aec455-83f5-4aa2-beb4-5dd1b735f1e8",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1220,
+            "y": 500
+          },
+          "nodeIndex": "eruptions_mensuelles",
+          "nodeLineageTag": "6668870d-ea97-403c-bf77-a9140c4d77ef",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 540,
+            "y": 370
+          },
+          "nodeIndex": "journal_geomagnetique",
+          "nodeLineageTag": "2ae996d6-64d1-4ba8-ba53-4155508dee58",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 880,
+            "y": 60
+          },
+          "nodeIndex": "kp_3h",
+          "nodeLineageTag": "7b98a947-b219-428b-9a25-8582055763fb",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 540,
+            "y": 860
+          },
+          "nodeIndex": "vent_solaire_horaire",
+          "nodeLineageTag": "e6101108-8ac8-4899-8bdf-9396f811044d",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 880,
+            "y": 380
+          },
+          "nodeIndex": "Calendrier",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 40,
+            "y": 40
+          },
+          "nodeIndex": "Mesures",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Toutes les tables",
+      "zoomValue": 70,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Toutes les tables",
+  "defaultDiagram": "Toutes les tables"
+}

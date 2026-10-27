@@ -1,0 +1,62 @@
+table kp_3h
+	lineageTag: 7b98a947-b219-428b-9a25-8582055763fb
+
+	column debut_tranche
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: d5f013fb-2fde-4f77-9f6c-77a0e0f6a3cf
+		summarizeBy: none
+		sourceColumn: debut_tranche
+
+		annotation SummarizationSetBy = Automatic
+
+	column jour
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 46a74401-4aa0-4e56-ac82-87b6a3e22873
+		summarizeBy: none
+		sourceColumn: jour
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column kp
+		dataType: double
+		lineageTag: ed7a5727-c9cd-45f0-b95d-363cc22791a4
+		summarizeBy: sum
+		sourceColumn: kp
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column source
+		dataType: string
+		lineageTag: a61ab52d-6c5b-4ec7-8ba9-4b2e0636e1a8
+		summarizeBy: none
+		sourceColumn: source
+
+		annotation SummarizationSetBy = Automatic
+
+	column classe_noaa
+		dataType: string
+		lineageTag: 344ad4b1-12bc-47a0-9f1f-4a4e811e2117
+		summarizeBy: none
+		sourceColumn: classe_noaa
+
+		annotation SummarizationSetBy = Automatic
+
+	partition kp_3h = m
+		mode: import
+		source =
+				let
+				    Source = Databricks.Catalogs(DatabricksHote, DatabricksCheminHttp, [Catalog="helios", Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation="2.0", Protocol=null]),
+				    helios_Database = Source{[Name="helios",Kind="Database"]}[Data],
+				    gold_Schema = helios_Database{[Name="gold",Kind="Schema"]}[Data],
+				    kp_3h_View = gold_Schema{[Name="kp_3h",Kind="View"]}[Data]
+				in
+				    kp_3h_View
+
+	annotation PBI_ResultType = Table
+

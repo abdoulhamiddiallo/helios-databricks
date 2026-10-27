@@ -1,0 +1,11 @@
+/// Nom d'hôte de votre espace Azure Databricks : SQL Warehouses, votre entrepôt, onglet Connection details, Server hostname.
+expression DatabricksHote = "adb-0000000000000000.0.azuredatabricks.net" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 407c3aab-0ba5-4e8a-b7f4-d5d22db6951a
+
+	annotation PBI_ResultType = Text
+
+/// Chemin HTTP de votre entrepôt SQL : SQL Warehouses, votre entrepôt, onglet Connection details, HTTP path.
+expression DatabricksCheminHttp = "/sql/1.0/warehouses/0000000000000000" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 11aea7d3-e714-4c1f-b83a-73d7cd6468c3
+
+	annotation PBI_ResultType = Text

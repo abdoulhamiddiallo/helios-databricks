@@ -1,0 +1,147 @@
+table du_soleil_a_la_terre
+	lineageTag: 80aec455-83f5-4aa2-beb4-5dd1b735f1e8
+
+	column gst_id
+		dataType: string
+		lineageTag: d8fe4eaa-2dbc-4a72-b627-fe0ab5c9c022
+		summarizeBy: none
+		sourceColumn: gst_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column cme_id
+		dataType: string
+		lineageTag: 7b333832-3724-4758-ad92-8f1abdfea818
+		summarizeBy: none
+		sourceColumn: cme_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column depart_soleil
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 98f7793b-e86f-4003-aec9-f9f1eb3aeedd
+		summarizeBy: none
+		sourceColumn: depart_soleil
+
+		annotation SummarizationSetBy = Automatic
+
+	column debut_tempete
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 41ec309b-856b-43ce-83ab-4a23f8c02e83
+		summarizeBy: none
+		sourceColumn: debut_tempete
+
+		annotation SummarizationSetBy = Automatic
+
+	column kp_max
+		dataType: double
+		lineageTag: 74cef7b3-6bf1-42ed-8fb3-3ac9d18aa4fc
+		summarizeBy: sum
+		sourceColumn: kp_max
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vitesse_kms
+		dataType: double
+		lineageTag: 16a5232b-253c-4872-b066-80367a8d69c4
+		summarizeBy: sum
+		sourceColumn: vitesse_kms
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column demi_angle_deg
+		dataType: double
+		lineageTag: f043f8c3-8d73-4441-86dd-0ffaeecbf410
+		summarizeBy: sum
+		sourceColumn: demi_angle_deg
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column type_cme
+		dataType: string
+		lineageTag: b29f16b0-6851-49b5-9d22-ff0b14e5946a
+		summarizeBy: none
+		sourceColumn: type_cme
+
+		annotation SummarizationSetBy = Automatic
+
+	column position_source
+		dataType: string
+		lineageTag: e5d697fe-9638-4425-ae87-e9e3cf8ffcd3
+		summarizeBy: none
+		sourceColumn: position_source
+
+		annotation SummarizationSetBy = Automatic
+
+	column region_active
+		dataType: int64
+		formatString: 0
+		lineageTag: a5392f39-6d1a-433c-84cf-c6cd3ab894f6
+		summarizeBy: sum
+		sourceColumn: region_active
+
+		annotation SummarizationSetBy = Automatic
+
+	column transit_observe_h
+		dataType: double
+		lineageTag: 256a978d-4d04-4a57-be75-47cf289b7509
+		summarizeBy: sum
+		sourceColumn: transit_observe_h
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column transit_balistique_h
+		dataType: double
+		lineageTag: 8683e07c-1bb1-4b47-b183-22a6bfefa84d
+		summarizeBy: sum
+		sourceColumn: transit_balistique_h
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ecart_h
+		dataType: double
+		lineageTag: 2a89d957-2cd8-4fac-8c7a-edb0b02af4f5
+		summarizeBy: sum
+		sourceColumn: ecart_h
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column lien_nasa
+		dataType: string
+		lineageTag: 28fde0da-2a7b-49c6-980a-17c0459eb90b
+		summarizeBy: none
+		sourceColumn: lien_nasa
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Date (UTC) du debut de la tempete, pour la relation avec le calendrier
+	column jour_tempete = DATE(YEAR(du_soleil_a_la_terre[debut_tempete]), MONTH(du_soleil_a_la_terre[debut_tempete]), DAY(du_soleil_a_la_terre[debut_tempete]))
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		lineageTag: 59c38473-01d3-4021-b5b5-645eb0191389
+
+	partition du_soleil_a_la_terre = m
+		mode: import
+		source =
+				let
+				    Source = Databricks.Catalogs(DatabricksHote, DatabricksCheminHttp, [Catalog="helios", Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation="2.0", Protocol=null]),
+				    helios_Database = Source{[Name="helios",Kind="Database"]}[Data],
+				    gold_Schema = helios_Database{[Name="gold",Kind="Schema"]}[Data],
+				    du_soleil_a_la_terre_View = gold_Schema{[Name="du_soleil_a_la_terre",Kind="View"]}[Data]
+				in
+				    du_soleil_a_la_terre_View
+

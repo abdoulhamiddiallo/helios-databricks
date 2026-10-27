@@ -1,0 +1,12 @@
+EVALUATE
+ADDCOLUMNS(
+    VALUES(dim_cycles_solaires[cycle]),
+    "debut", CALCULATE(MIN(dim_cycles_solaires[debut])),
+    "fin", CALCULATE(MAX(dim_cycles_solaires[fin])),
+    "g4", [Jours G4],
+    "g5", [Jours G5],
+    "tempete", [Jours de tempête],
+    "taches", [Taches solaires moyennes],
+    "jours", [Jours observés]
+)
+ORDER BY dim_cycles_solaires[cycle]

@@ -1,0 +1,26 @@
+model Model
+	culture: fr-FR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: fr-FR
+	valueFilterBehavior: independent
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBI_QueryOrder = ["DatabricksHote","DatabricksCheminHttp","comparaison_sondes","dim_cycles_solaires","du_soleil_a_la_terre","eruptions_mensuelles","journal_geomagnetique","kp_3h","vent_solaire_horaire","cycle_solaire_mensuel"]
+
+ref table comparaison_sondes
+ref table dim_cycles_solaires
+ref table du_soleil_a_la_terre
+ref table eruptions_mensuelles
+ref table journal_geomagnetique
+ref table kp_3h
+ref table vent_solaire_horaire
+ref table cycle_solaire_mensuel
+ref table Calendrier
+ref table Mesures
+
+ref cultureInfo fr-FR
+

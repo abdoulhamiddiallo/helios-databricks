@@ -1,0 +1,89 @@
+table journal_geomagnetique
+	lineageTag: 2ae996d6-64d1-4ba8-ba53-4155508dee58
+
+	column jour
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: ec780429-99fb-437c-aade-9ca2c86f20a4
+		summarizeBy: none
+		sourceColumn: jour
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column annee
+		dataType: int64
+		formatString: 0
+		lineageTag: 95d8498c-439a-4630-9e56-4f994f3d121a
+		summarizeBy: sum
+		sourceColumn: annee
+
+		annotation SummarizationSetBy = Automatic
+
+	column cycle
+		dataType: int64
+		formatString: 0
+		lineageTag: 6210b3fb-3e29-499f-84db-8d746a7f1ccf
+		summarizeBy: none
+		sourceColumn: cycle
+
+		annotation SummarizationSetBy = Automatic
+
+	column kp_max
+		dataType: double
+		lineageTag: 873dcd6f-6147-4285-899d-7db68626516a
+		summarizeBy: sum
+		sourceColumn: kp_max
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column classe_noaa
+		dataType: string
+		lineageTag: f5842901-d634-4e32-91fe-ee127886dc1a
+		summarizeBy: none
+		sourceColumn: classe_noaa
+
+		annotation SummarizationSetBy = Automatic
+
+	column ap
+		dataType: int64
+		formatString: 0
+		lineageTag: a124467e-ea0b-4fa8-b159-6ab080e7f16c
+		summarizeBy: sum
+		sourceColumn: ap
+
+		annotation SummarizationSetBy = Automatic
+
+	column taches_solaires
+		dataType: int64
+		formatString: 0
+		lineageTag: 8934f826-2cfe-4380-920a-69e2273bb774
+		summarizeBy: sum
+		sourceColumn: taches_solaires
+
+		annotation SummarizationSetBy = Automatic
+
+	column flux_f107
+		dataType: double
+		lineageTag: f5cb5a06-50fa-4ac0-b9d9-ccd597b230ff
+		summarizeBy: sum
+		sourceColumn: flux_f107
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition journal_geomagnetique = m
+		mode: import
+		source =
+				let
+				    Source = Databricks.Catalogs(DatabricksHote, DatabricksCheminHttp, [Catalog="helios", Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation="2.0", Protocol=null]),
+				    helios_Database = Source{[Name="helios",Kind="Database"]}[Data],
+				    gold_Schema = helios_Database{[Name="gold",Kind="Schema"]}[Data],
+				    journal_geomagnetique_View = gold_Schema{[Name="journal_geomagnetique",Kind="View"]}[Data]
+				in
+				    journal_geomagnetique_View
+

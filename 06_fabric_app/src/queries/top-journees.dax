@@ -1,0 +1,15 @@
+EVALUATE
+TOPN(
+    12,
+    SELECTCOLUMNS(
+        journal_geomagnetique,
+        "jour", journal_geomagnetique[jour],
+        "kpMax", journal_geomagnetique[kp_max],
+        "ap", journal_geomagnetique[ap],
+        "classe", journal_geomagnetique[classe_noaa],
+        "cycle", journal_geomagnetique[cycle],
+        "taches", journal_geomagnetique[taches_solaires]
+    ),
+    [ap], DESC, [kpMax], DESC
+)
+ORDER BY [ap] DESC, [kpMax] DESC
